@@ -20,15 +20,16 @@ struct LoginView: View {
     
     @State private var isLoading: Bool = false
     
+    @State private var instance = "https://ovk.to"
+    
     @State private var isWebViewOpened: Bool = false
-    @State private var webViewURL: URL =  URL(string: "https://openvk.su/reg")!
+    @State private var webViewURL: URL =  URL(string: "https://ovk.to/reg")!
     
     @State private var showError: Bool = false
     @State private var errorText: String = ""
     
     @State private var show2FA: Bool = false
     
-    @State private var instance = "https://openvk.su"
     
     @State private var customToken = ""
     
