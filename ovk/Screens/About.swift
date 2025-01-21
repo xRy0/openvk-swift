@@ -52,6 +52,14 @@ struct About: View {
                             .foregroundStyle(.secondary)
                     }
                 }
+                Link(destination: URL(string: "https://ry0.ru")!) {
+                    HStack{
+                        Text("Ry0")
+                        Spacer()
+                        Text("ry0.ru")
+                            .foregroundStyle(.secondary)
+                    }
+                }
             } header: {
                 Text("Разработчики")
             }

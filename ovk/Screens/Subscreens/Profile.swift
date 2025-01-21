@@ -64,6 +64,10 @@ struct Profile: View {
     @Binding var imageURL: String
     @Binding var viewerShown: Bool
     
+    @State private var showSheet = false
+    @State private var postText: String = ""
+
+    
     func clearProfileVariables() {
         isMoreInfoPopupOpened = false
         error = false
@@ -134,6 +138,12 @@ struct Profile: View {
         if !loadEnded {
             CallAPI(function: "Account.getProfileInfo", completion: afterGetProfileInfoLoad)
         }
+    }
+    
+    func newPost(text: String) {
+        CallAPI(function: "wall.post", params: ["owner_id": userIDtoGet, "message": text], completion: afterNewPostGetLoad)
+        showSheet = false
+        postText = ""
     }
     
     func afterGetProfileInfoLoad(data: [String: Any]?) {
@@ -244,6 +254,11 @@ struct Profile: View {
         let response = data?["response"] as? [String: Any]
         posts = response?["items"] as? [Any] ?? []
         postsProfiles = response?["profiles"] as? [Any] ?? []
+        
+    }
+    
+    func afterNewPostGetLoad(data: [String: Any]?) {
+        refresh()
     }
     
     func afterAdditionalPostsGetLoad(data: [String: Any]?) {
@@ -350,15 +365,44 @@ struct Profile: View {
                     }
                 }.modifier(FormElevateOnWhiteBackground())
                 
+                Section {
+                    Button("Новая запись") {
+                        showSheet = true
+                    }
+                    .sheet(isPresented: $showSheet) {
+                        VStack(alignment: .leading, spacing: 0.0) {
+                                    Text("Введите текст:")
+                                        .font(.headline)
+
+                                    TextEditor(text: $postText)
+                                        
+
+                                    Button("Отправить") {
+                                        newPost(text: postText)
+                                    }
+                                    .padding()
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(8)
+                                }
+                                .padding()
+                    }
+                    
+                }
+                .modifier(FormElevateOnWhiteBackground())
+                
+                
                 
                 Section {
                     ForEach(0..<posts.count, id:\.self) {index in
+                        
                         Post(
                             post: posts[index] as! Dictionary<String, Any>,
                             profiles: postsProfiles as! [Dictionary<String, Any>],
                             imageURL: $imageURL,
                             viewerShown: $viewerShown
                         )
+                        .id(UUID().uuidString) // Говно-костыль
                         .listRowInsets(EdgeInsets())
                     }
                     if !postsLoadingFinished && posts.count > 0 {
