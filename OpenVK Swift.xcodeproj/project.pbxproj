@@ -65,6 +65,7 @@
 		2AF9EB042AE9BC29009F0935 /* DateAndTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTime.swift; sourceTree = "<group>"; };
 		2AF9EB062AE9DA8D009F0935 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7A1AF4222D3DF00700DA438A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		7AA654C32D4143AE0074A73B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		2A18C94F2AE6BFE6005A3F7C = {
 			isa = PBXGroup;
 			children = (
+				7AA654C32D4143AE0074A73B /* .gitignore */,
 				2A18C95A2AE6BFE6005A3F7C /* ovk */,
 				2A18C9592AE6BFE6005A3F7C /* Products */,
 			);
@@ -430,7 +432,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26.12.23;
+				CURRENT_PROJECT_VERSION = 22.01.25;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
 				DEVELOPMENT_TEAM = GCF46TATC9;
 				ENABLE_PREVIEWS = YES;
@@ -447,7 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "0.2.5-a";
+				MARKETING_VERSION = 0.2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -466,7 +468,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26.12.23;
+				CURRENT_PROJECT_VERSION = 22.01.25;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
 				DEVELOPMENT_TEAM = GCF46TATC9;
 				ENABLE_PREVIEWS = YES;
@@ -483,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "0.2.5-a";
+				MARKETING_VERSION = 0.2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
