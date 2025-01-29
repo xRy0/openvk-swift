@@ -8,20 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
-    
-    @State private var isMainViewUpdated = false
     @State private var debug = false
+    @State private var isMainViewUpdated = false
     
     var body: some View {
         Group {
-            if (getValueFromKeychain(forKey:"token") == nil) {
+            if AuthenticationManager.shared.isUserLoggedIn() {
+                MainScreen(isMainViewUpdated: $isMainViewUpdated, debug: $debug)
+            } else {
                 LoginView(debug: $debug, isMainViewUpdated: $isMainViewUpdated)
             }
-            else {
-                MainScreen(isMainViewUpdated: $isMainViewUpdated, debug: $debug)
-            }
         }
-        // Костыль, чтобы обновлять экран ¯\_(ツ)_/¯ 👇🏼 (не осуждайте пж)
         .background(isMainViewUpdated ? Color.clear : Color.clear)
     }
 }

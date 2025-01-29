@@ -8,74 +8,56 @@
 import SwiftUI
 
 struct LoginView: View {
-    
     @Binding var debug: Bool
+    @Binding var isMainViewUpdated: Bool
     
+    @State private var instance: String = "https://ovk.to"
     @State private var login: String = ""
     @State private var password: String = ""
     @State private var twoFA: String = ""
-    
     @State private var showAlert: Bool = false
-    @State private var alertText: String = ""
-    
-    @State private var isLoading: Bool = false
-    
-    @State private var instance = "https://ovk.to"
-    
-    @State private var isWebViewOpened: Bool = false
-    @State private var webViewURL: URL =  URL(string: "https://ovk.to/reg")!
-    
     @State private var showError: Bool = false
-    @State private var errorText: String = ""
-    
-    @State private var show2FA: Bool = false
-    
-    
+    @State private var alertText: String = ""
+    @State private var isLoading: Bool = false
     @State private var customToken = ""
-    
-    // Эта хрень обновляет view 👇🏼
-    @State private var isViewUpdated = false
-    @Binding var isMainViewUpdated: Bool
+    @State private var show2FA = false
+    @State private var webViewURL: URL =  URL(string: "https://ovk.to/reg")!
+    @State private var isWebViewOpened = false
     
     
     var body: some View {
         NavigationView {
             Form {
-                
+                // Debug section
                 if debug {
-                    Section /* DEBUG */ {
-                        Text("Зайти через токен (обратите внимание, что будет использован инстанс указанный ниже, так же обратите внимание что нет проверки на верность токена):")
+                    Section(header: Text("Debug")) {
                         TextField("Token", text: $customToken)
                         Button("Войти") {
                             if !saveValueToKeychain(forKey: "token", value: customToken) {
-                                errorText = "Токен не может быть сохранён, так как имеется другой"
+                                alertText = "Токен не может быть сохранён, так как имеется другой"
+                                showAlert = true
                                 showError = true
-                            }
-                            else {
+                            } else {
                                 isMainViewUpdated.toggle()
                                 saveValueToUserDefaults(forKey: "instance", value: instance)
                             }
                         }
-                    } header: {
-                        Text("Debug")
                     }
                 }
                 
-                
-                Section /* Поле ввода инстанса */ {
+                // Instance section
+                Section(header: Text("Инстанс")) {
                     TextField("Адрес", text: $instance)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                        .onChange(of: login, perform: { value in
+                        .onChange(of: instance, perform: { value in
                             showError = false
                             show2FA = false
                         })
-                } header: {
-                    Text("Инстанс")
                 }
                 
-                
-                Section /* Поля ввода данных для входа */ {
+                // Login section
+                Section(header: Text("Данные для входа"), footer: showError ? Text(alertText).foregroundColor(Color.red) : nil) {
                     TextField("Логин", text: $login)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
@@ -84,95 +66,78 @@ struct LoginView: View {
                             show2FA = false
                         })
                     SecureField("Пароль", text: $password)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
                         .onChange(of: password, perform: { value in
                             showError = false
                             show2FA = false
                         })
                     if show2FA {
                         TextField("2FA", text: $twoFA)
-                            .autocapitalization(.none)
-                            .disableAutocorrection(true)
-                            .onChange(of: login, perform: { value in
-                                showError = false
-                            })
-                    }
-                } header: {
-                    Text("Данные для входа")
-                } footer: {
-                    if showError {
-                        Text(errorText)
-                            .foregroundColor(Color.red)
                     }
                 }
                 
-                
-                Section /* Кнопки войти, зарегистрироваться */ {
-                    Button (action:{
+                // Actions section
+                Section {
+                    Button(action: {
                         isLoading = true
-                        
-                        // 👇🏼 Эта функция вызывается после того как отрабатывает LogIn
-                        func completion(response: [String : Any]?) {
+                        LoginService.shared.login(instance: instance, username: login, password: password) { response in
                             isLoading = false
                             
-                            if (response!["error_msg"] != nil) {
-                                if response!["error_msg"] as! String == "Invalid 2FA code" && !show2FA {
+                            if let errorMsg = response?["error_msg"] as? String {
+                                if errorMsg == "Invalid 2FA code" && !show2FA {
                                     show2FA = true
-                                    isViewUpdated.toggle()
-                                }
-                                else {
-                                    errorText = response!["error_msg"] as! String
+                                } else {
+                                    alertText = errorMsg
+                                    showAlert = true
                                     showError = true
                                 }
-                            }
-                            else {
-                                if !saveValueToKeychain(forKey: "token", value: response!["access_token"]! as! String) {
-                                    errorText = "Токен не может быть сохранён, так как имеется другой"
+                            } else if let token = response?["access_token"] as? String {
+                                if !saveValueToKeychain(forKey: "token", value: token) {
+                                    alertText = "Токен не может быть сохранён, так как имеется другой"
+                                    showAlert = true
                                     showError = true
-                                }
-                                else {
+                                } else {
                                     isMainViewUpdated.toggle()
                                     saveValueToUserDefaults(forKey: "instance", value: instance)
                                 }
                             }
-                            
                         }
-                        LogIn(login: login, password: password, instance: instance, code: twoFA, completion: completion)
                     }) {
-                        HStack(){
+                        HStack {
                             Text("Войти")
-                                .frame(maxWidth: .infinity, alignment: .leading)
                             if isLoading {
                                 ProgressView()
                             }
                         }
                     }
+                    
                     Button("Зарегистрироваться в браузере") {
-                        webViewURL = URL(string: "\(instance)/reg")!
-                        isWebViewOpened = true
-                    }
-                    Button("Сбросить пароль") {
-                        webViewURL = URL(string: "\(instance)/restore")!
-                        isWebViewOpened = true
-                    }
-                    .sheet(isPresented: $isWebViewOpened, content: {
-                        NavigationView {
-                            WebView(url: webViewURL)
-                                .navigationTitle("OpenVK")
-                                .navigationBarTitleDisplayMode(.inline)
-                        }.navigationViewStyle(.stack)
-                    })
+                                            webViewURL = URL(string: "\(instance)/reg")!
+                                            isWebViewOpened = true
+                                        }
+                                        Button("Сбросить пароль") {
+                                            webViewURL = URL(string: "\(instance)/restore")!
+                                            isWebViewOpened = true
+                                        }
+                                        .sheet(isPresented: $isWebViewOpened, content: {
+                                            NavigationView {
+                                                WebView(url: webViewURL)
+                                                    .navigationTitle("OpenVK")
+                                                    .navigationBarTitleDisplayMode(.inline)
+                                            }.navigationViewStyle(.stack)
+                                        })
                 }
             }
             .alert(isPresented: $showAlert, content: {
-                Alert(title: Text(alertText))
+                AlertManager.shared.showAlert(message: alertText)
             })
-                // Костыль, чтобы обновлять экран ¯\_(ツ)_/¯ 👇🏼 (не осуждайте пж)
-                .background(isViewUpdated ? Color.clear : Color.clear)
-                .allowsHitTesting(!isLoading)
-                .navigationBarTitle("OpenVK Swift")
-                .toolbar {
-                    NavigationLink (destination: LoginSettings(debug: $debug, isMainViewUpdated: $isMainViewUpdated)) {Image(systemName: "gearshape")}
+            .navigationBarTitle("OpenVK Swift")
+            .toolbar {
+                NavigationLink(destination: LoginSettings(debug: $debug, isMainViewUpdated: $isMainViewUpdated)) {
+                    Image(systemName: "gearshape")
                 }
+            }
         }.navigationViewStyle(.stack)
     }
 }
