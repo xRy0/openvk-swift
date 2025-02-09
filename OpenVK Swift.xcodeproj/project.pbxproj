@@ -39,6 +39,7 @@
 		7A11D9972D4ABE04003EB809 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9962D4ABE02003EB809 /* LoginService.swift */; };
 		7A11D99A2D4ABE2D003EB809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9992D4ABE2A003EB809 /* User.swift */; };
 		7A1AF4232D3DF00700DA438A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AF4222D3DF00700DA438A /* Music.swift */; };
+		7AD347E42D595BBE0019AE68 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD347E32D595BB80019AE68 /* ProfileModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		7A11D9992D4ABE2A003EB809 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A1AF4222D3DF00700DA438A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		7AA654C32D4143AE0074A73B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7AD347E32D595BB80019AE68 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 		7A11D9982D4ABE23003EB809 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7AD347E32D595BB80019AE68 /* ProfileModel.swift */,
 				7A11D9992D4ABE2A003EB809 /* User.swift */,
 			);
 			path = Models;
@@ -318,6 +321,7 @@
 				2A28D6852AE959D400531DC9 /* Localization.swift in Sources */,
 				2A95C5642AE8F24F0042F64C /* MainView.swift in Sources */,
 				2A8139F72B19DB9100BB471C /* Feed.swift in Sources */,
+				7AD347E42D595BBE0019AE68 /* ProfileModel.swift in Sources */,
 				2A6FE33A2AE7B47D00F1D694 /* WebView.swift in Sources */,
 				2A6FE3372AE7A32100F1D694 /* LogIn.swift in Sources */,
 				2A28D6832AE92A7800531DC9 /* UserDefaults.swift in Sources */,
