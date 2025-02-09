@@ -33,14 +33,7 @@ struct LoginView: View {
                     Section(header: Text("Debug")) {
                         TextField("Token", text: $customToken)
                         Button("Войти") {
-                            if !saveValueToKeychain(forKey: "token", value: customToken) {
-                                alertText = "Токен не может быть сохранён, так как имеется другой"
-                                showAlert = true
-                                showError = true
-                            } else {
-                                isMainViewUpdated.toggle()
-                                saveValueToUserDefaults(forKey: "instance", value: instance)
-                            }
+                            handleCustomTokenLogin(customToken: customToken, instance: instance)
                         }
                     }
                 }
@@ -80,29 +73,7 @@ struct LoginView: View {
                 // Actions section
                 Section {
                     Button(action: {
-                        isLoading = true
-                        LoginService.shared.login(instance: instance, username: login, password: password) { response in
-                            isLoading = false
-                            
-                            if let errorMsg = response?["error_msg"] as? String {
-                                if errorMsg == "Invalid 2FA code" && !show2FA {
-                                    show2FA = true
-                                } else {
-                                    alertText = errorMsg
-                                    showAlert = true
-                                    showError = true
-                                }
-                            } else if let token = response?["access_token"] as? String {
-                                if !saveValueToKeychain(forKey: "token", value: token) {
-                                    alertText = "Токен не может быть сохранён, так как имеется другой"
-                                    showAlert = true
-                                    showError = true
-                                } else {
-                                    isMainViewUpdated.toggle()
-                                    saveValueToUserDefaults(forKey: "instance", value: instance)
-                                }
-                            }
-                        }
+                        handleLogin(instance: instance, login: login, password: password)
                     }) {
                         HStack {
                             Text("Войти")
@@ -140,6 +111,42 @@ struct LoginView: View {
             }
         }.navigationViewStyle(.stack)
     }
+    private func handleCustomTokenLogin(customToken: String, instance: String) {
+            if !saveValueToKeychain(forKey: "token", value: customToken) {
+                alertText = "Токен не может быть сохранён, так как имеется другой"
+                showAlert = true
+                showError = true
+            } else {
+                isMainViewUpdated.toggle()
+                saveValueToUserDefaults(forKey: "instance", value: instance)
+            }
+        }
+        
+    private func handleLogin(instance: String, login: String, password: String) {
+            isLoading = true
+            LoginService.shared.login(instance: instance, username: login, password: password) { response in
+                isLoading = false
+                
+                if let errorMsg = response?["error_msg"] as? String {
+                    if errorMsg == "Invalid 2FA code" && !show2FA {
+                        show2FA = true
+                    } else {
+                        alertText = errorMsg
+                        showAlert = true
+                        showError = true
+                    }
+                } else if let token = response?["access_token"] as? String {
+                    if !saveValueToKeychain(forKey: "token", value: token) {
+                        alertText = "Токен не может быть сохранён, так как имеется другой"
+                        showAlert = true
+                        showError = true
+                    } else {
+                        isMainViewUpdated.toggle()
+                        saveValueToUserDefaults(forKey: "instance", value: instance)
+                    }
+                }
+            }
+        }
 }
 
 #Preview {
