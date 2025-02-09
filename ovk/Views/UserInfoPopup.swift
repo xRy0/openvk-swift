@@ -2,58 +2,46 @@
 //  Popup.swift
 //  OpenVK Swift
 //
-//  Created by Isami Riša on 02.11.2023.
+//  Created by Ry0 on 02.11.2023.
 //
 
 import Foundation
 import SwiftUI
 import WebKit
 
-struct UserInfoPopup: View { 
+struct UserInfoPopup: View {
+    @Binding var profileObject: ProfileObject?
     
-    var sex_values = [
+    var sex_values: [Int: String] = [
         0: "они/их",
         1: "она/её",
         2: "он/его"
     ]
     
-    @Binding var sex: Int
-    
-    @Binding var music: String
-    @Binding var movies: String
-    @Binding var tv: String
-    @Binding var books: String
-    @Binding var city: String
-    @Binding var interests: String
-    
-    @Binding var quotes: String
-    @Binding var email: String
-    @Binding var telegram: String
-    @Binding var about: String
-    
     var body: some View {
         Form {
-            
             Section {
-                if email != "" {
-                    VStack (alignment: .leading) {
+                if let email = profileObject?.email, !email.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("E-mail")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
                         Text(email)
                     }
                 }
-                if telegram != "" {
-                    VStack (alignment: .leading) {
+                
+                if let telegram = profileObject?.telegram, !telegram.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("Telegram")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
                         Text(telegram)
                     }
                 }
-                if city != "" {
+                
+                if let city = profileObject?.city, !city.isEmpty {
                     Section {
-                        VStack (alignment: .leading) {
+                        VStack(alignment: .leading) {
                             Text("Город")
                                 .font(.callout.smallCaps())
                                 .foregroundStyle(.secondary)
@@ -64,9 +52,8 @@ struct UserInfoPopup: View {
             }.modifier(FormElevateOnWhiteBackground())
             
             Section {
-                
-                if interests != "" {
-                    VStack (alignment: .leading) {
+                if let interests = profileObject?.interests, !interests.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("Интересы")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
@@ -74,8 +61,8 @@ struct UserInfoPopup: View {
                     }
                 }
                 
-                if music != "" {
-                    VStack (alignment: .leading) {
+                if let music = profileObject?.music, !music.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("Любимая музыка")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
@@ -83,8 +70,8 @@ struct UserInfoPopup: View {
                     }
                 }
                 
-                if movies != "" {
-                    VStack (alignment: .leading) {
+                if let movies = profileObject?.movies, !movies.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("Любимые фильмы")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
@@ -92,8 +79,8 @@ struct UserInfoPopup: View {
                     }
                 }
                 
-                if tv != "" {
-                    VStack (alignment: .leading) {
+                if let tv = profileObject?.tv, !tv.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("Любимые ТВ-шоу")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
@@ -101,8 +88,8 @@ struct UserInfoPopup: View {
                     }
                 }
                 
-                if music != "" {
-                    VStack (alignment: .leading) {
+                if let books = profileObject?.books, !books.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("Любимые книги")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
@@ -110,8 +97,8 @@ struct UserInfoPopup: View {
                     }
                 }
                 
-                if quotes != "" {
-                    VStack (alignment: .leading) {
+                if let quotes = profileObject?.quotes, !quotes.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("Любимые цитаты")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
@@ -119,27 +106,24 @@ struct UserInfoPopup: View {
                     }
                 }
                 
-                if about != "" {
-                    VStack (alignment: .leading) {
+                if let about = profileObject?.about, !about.isEmpty {
+                    VStack(alignment: .leading) {
                         Text("О себе")
                             .font(.callout.smallCaps())
                             .foregroundStyle(.secondary)
                         Text(about)
                     }
                 }
-                
             }.modifier(FormElevateOnWhiteBackground())
             
             Section {
-                VStack (alignment: .leading) {
+                VStack(alignment: .leading) {
                     Text("Местоимения")
                         .font(.callout.smallCaps())
                         .foregroundStyle(.secondary)
-                    Text(sex_values[sex] ?? "Неизвестно")
+                    Text(sex_values[profileObject?.sex ?? 0] ?? "Неизвестно")
                 }
             }.modifier(FormElevateOnWhiteBackground())
-            
         }
     }
-    
 }

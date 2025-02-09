@@ -372,19 +372,7 @@ struct Profile: View {
                 .listRowBackground(Color.clear)
                 .sheet(isPresented: $isMoreInfoPopupOpened, content: {
                     NavigationView {
-                        UserInfoPopup(
-                                    sex: $profileObject.sex ?? 0,
-                                    music: $profileObject.music ?? "",
-                                    movies: $profileObject.movies ?? "",
-                                    tv: $profileObject.tv ?? "",
-                                    books: $profileObject.books ?? "",
-                                    city: $profileObject.city ?? "",
-                                    interests: $profileObject.interests ?? "",
-                                    quotes: $profileObject.quotes ?? "",
-                                    email: $profileObject.email ?? "",
-                                    telegram: $profileObject.telegram ?? "",
-                                    about: $profileObject.about ?? ""
-                                )
+                        UserInfoPopup(profileObject: $profileObject)
                             .navigationTitle("Информация")
                             .navigationBarTitleDisplayMode(.inline)
                     }
