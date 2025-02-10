@@ -146,19 +146,21 @@ struct Profile: View {
             // Преобразуем словарь в Data
             if let jsonData = try? JSONSerialization.data(withJSONObject: userInfo, options: []) {
                 do {
+                    print("!!! DATA GAINED")
                     // Декодируем данные
                     profileObject = try JSONDecoder().decode(ProfileObject.self, from: jsonData)
                     
                     
                     if profileObject?.online == 0 {
-                        if let lastSeenTime = profileObject?.lastSeen.time, lastSeenTime != 0 {
-                            lastSeen = "\(convertTimestampToStatus(lastSeenTime, sex: profileObject?.sex ?? 0)) \(getPlatform(platform_integer: profileObject?.lastSeen.platform ?? 0))"
+                        if let lastSeenTime = profileObject?.lastSeen?.time, lastSeenTime != 0 {
+                            lastSeen = "\(convertTimestampToStatus(lastSeenTime, sex: profileObject?.sex ?? 0)) \(getPlatform(platform_integer: profileObject?.lastSeen?.platform ?? 0))"
                         } else {
                             lastSeen = getLocalizedString(key: "Никогда")
                         }
                     } else {
-                        lastSeen = "\(getLocalizedString(key: "online").capitalizedSentence) \(getPlatform(platform_integer: profileObject?.lastSeen.platform ?? 0))"
+                        lastSeen = "\(getLocalizedString(key: "online").capitalizedSentence) \(getPlatform(platform_integer: profileObject?.lastSeen?.platform ?? 0))"
                     }
+                    name = "\(profileObject?.firstName ?? "") \(profileObject?.lastName ?? "")"
                     
                     loadEnded = true
                 } catch {

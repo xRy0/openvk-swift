@@ -10,27 +10,27 @@ import Foundation
 // Основная структура для всего объекта
 struct ProfileObject: Codable {
     let id: Int
-    let firstName: String
-    let lastName: String
-    let isClosed: Bool
-    let canAccessClosed: Bool
-    let status: String
+    let firstName: String?
+    let lastName: String?
+    let isClosed: Bool?
+    let canAccessClosed: Bool?
+    let status: String?
     let statusAudio: StatusAudio?
-    let photo200: String
-    let lastSeen: LastSeen
+    let photo200: String?
+    let lastSeen: LastSeen?
     let music: String?
-    let sex: Int
+    let sex: Int?
     let movies: String?
     let tv: String?
     let books: String?
-    let city: String
-    let interests: String
-    let verified: Int
+    let city: String?
+    let interests: String?
+    let verified: Int?
     let about: String?
-    let email: String
+    let email: String?
     let quotes: String?
-    let telegram: String
-    let online: Int
+    let telegram: String?
+    let online: Int?
     
     // Кодирование ключей (чтобы соответствовать JSON)
     enum CodingKeys: String, CodingKey {
