@@ -24,28 +24,9 @@ struct Profile: View {
     @State var errorReason = ""
     
     @State var jsonData = [:]
-    @State var profileImage = ""
-    @State var first_name = ""
-    @State var last_name = ""
+    @State var profileObject: ProfileObject? = nil
     @State var name = getLocalizedString(key: "Loading...")
-    @State var online = 0
-    @State var platform = 1
-    @State var sex = 0
-    @State var lastSeenObject = [:]
     @State var lastSeen = ""
-    @State var status = ""
-    @State var verified = 0
-    
-    @State var music = ""
-    @State var movies = ""
-    @State var tv = ""
-    @State var books = ""
-    @State var city = ""
-    @State var interests = ""
-    @State var about = ""
-    @State var email = ""
-    @State var quotes = ""
-    @State var telegram = ""
     
     @State var posts = []
     @State var postsProfiles = []
@@ -74,28 +55,11 @@ struct Profile: View {
         errorReason = ""
         
         jsonData = [:]
-        profileImage = ""
-        first_name = ""
-        last_name = ""
-        name = getLocalizedString(key: "Loading...")
-        online = 0
-        platform = 1
-        sex = 0
-        lastSeenObject = [:]
-        lastSeen = ""
-        status = ""
-        verified = 0
         
-        music = ""
-        movies = ""
-        tv = ""
-        books = ""
-        city = ""
-        interests = ""
-        about = ""
-        email = ""
-        quotes = ""
-        telegram = ""
+        name = getLocalizedString(key: "Loading...")
+        
+        lastSeen = ""
+        
         
         posts = []
         postsProfiles = []
@@ -171,50 +135,40 @@ struct Profile: View {
     }
     
     func afterProfileDataLoad(data: [String: Any]?) {
-        if (data?["error_msg"] != nil) {
+        if let errorMsg = data?["error_msg"] as? String {
             error = true
-            errorReason = data!["error_msg"] as! String
+            errorReason = errorMsg
         }
+        
         if let responseArray = data?["response"] as? [[String: Any]] {
-            let userInfo = responseArray.first
-            jsonData = userInfo ?? [:]
-            first_name = userInfo?["first_name"] as? String ?? "Error"
-            if jsonData.isEmpty {
-                return
-            }
-            last_name = userInfo?["last_name"] as? String ?? ""
-            name = "\(first_name) \(last_name)"
-            profileHeader = name
-            lastSeenObject = userInfo?["last_seen"] as? [AnyHashable : Any] ?? ["platform": 1, "time": 0]
-            online = userInfo?["online"] as? Int ?? 0
-            platform = lastSeenObject["platform"] as? Int ?? 1
-            sex = userInfo?["sex"] as? Int ?? 0
-            if (online == 0) {
-                if lastSeenObject["time"] as? Int != 0 {
-                    lastSeen = "\(convertTimestampToStatus(lastSeenObject["time"] as! Int, sex: sex)) \(getPlatform(platform_integer: platform))"
-                } else {
-                    lastSeen = getLocalizedString(key: "Никогда")
+            guard let userInfo = responseArray.first else { return }
+            
+            // Преобразуем словарь в Data
+            if let jsonData = try? JSONSerialization.data(withJSONObject: userInfo, options: []) {
+                do {
+                    print("!!! DATA GAINED")
+                    // Декодируем данные
+                    profileObject = try JSONDecoder().decode(ProfileObject.self, from: jsonData)
+                    
+                    
+                    if profileObject?.online == 0 {
+                        if let lastSeenTime = profileObject?.lastSeen?.time, lastSeenTime != 0 {
+                            lastSeen = "\(convertTimestampToStatus(lastSeenTime, sex: profileObject?.sex ?? 0)) \(getPlatform(platform_integer: profileObject?.lastSeen?.platform ?? 0))"
+                        } else {
+                            lastSeen = getLocalizedString(key: "Никогда")
+                        }
+                    } else {
+                        lastSeen = "\(getLocalizedString(key: "online").capitalizedSentence) \(getPlatform(platform_integer: profileObject?.lastSeen?.platform ?? 0))"
+                    }
+                    name = "\(profileObject?.firstName ?? "") \(profileObject?.lastName ?? "")"
+                    
+                    loadEnded = true
+                } catch {
+                    print("Ошибка декодирования: \(error)")
                 }
             } else {
-                lastSeen = "\(getLocalizedString(key: "online").capitalizedSentence) \(getPlatform(platform_integer: platform))"
+                print("Не удалось преобразовать словарь в Data")
             }
-            status = userInfo?["status"] as? String ?? ""
-            profileImage = userInfo?["photo_200"] as? String ?? ""
-            
-            status = userInfo?["status"] as? String ?? ""
-            verified = userInfo?["verified"] as? Int ?? 0
-            music = userInfo?["music"] as? String ?? ""
-            movies = userInfo?["movies"] as? String ?? ""
-            tv = userInfo?["tv"] as? String ?? ""
-            books = userInfo?["books"] as? String ?? ""
-            city = userInfo?["city"] as? String ?? ""
-            interests = userInfo?["interests"] as? String ?? ""
-            email = userInfo?["email"] as? String ?? ""
-            telegram = userInfo?["telegram"] as? String ?? ""
-            quotes = userInfo?["quotes"] as? String ?? ""
-            about = userInfo?["about"] as? String ?? ""
-            
-            loadEnded = true
         }
     }
     
@@ -282,7 +236,7 @@ struct Profile: View {
                             refresh()
                         }
                         .frame(maxWidth: .infinity, alignment: .center)
-                        Text("Sex: \(sex)")
+                        Text("Sex: \(profileObject?.sex)")
                     } header: {
                         Text("Debug")
                     }
@@ -290,7 +244,7 @@ struct Profile: View {
                 
                 Section {
                     HStack (alignment: .top, spacing: 20) {
-                        AsyncImage(url: URL(string: profileImage)) { image in image.resizable().scaledToFill() }
+                        AsyncImage(url: URL(string: profileObject?.photo200 ?? (getValueFromUserDefaults(forKey: "instance") ?? "https://ovk.to") + "/assets/packages/static/openvk/img/camera_200.png")) { image in image.resizable().scaledToFill() }
                     placeholder: {
                         ProgressView()
                     }
@@ -300,16 +254,16 @@ struct Profile: View {
                             HStack {
                                 Text(name)
                                     .font(.headline)
-                                if (verified != 0) {
+                                if (profileObject?.verified != 0) {
                                     Image(systemName: "checkmark")
                                 }
                             }
                             Text(lastSeen)
                                 .font(.subheadline)
-                                .foregroundColor((online != 0) ? .primary : .secondary)
+                                .foregroundColor((profileObject?.online != 0) ? .primary : .secondary)
                             Spacer()
                                 .frame(height: 15)
-                            Text(status)
+                            Text(profileObject?.status ?? "")
                                 .font(.callout)
                         }
                         .frame(alignment: .leading)
@@ -420,7 +374,7 @@ struct Profile: View {
                 .listRowBackground(Color.clear)
                 .sheet(isPresented: $isMoreInfoPopupOpened, content: {
                     NavigationView {
-                        UserInfoPopup(sex: $sex, music: $music, movies: $movies, tv: $tv, books: $books, city: $city, interests: $interests, quotes: $quotes, email: $email, telegram: $telegram, about: $about)
+                        UserInfoPopup(profileObject: $profileObject)
                             .navigationTitle("Информация")
                             .navigationBarTitleDisplayMode(.inline)
                     }

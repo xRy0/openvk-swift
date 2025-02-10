@@ -34,7 +34,12 @@
 		2AECF5C62AE7D30800A463A3 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECF5C52AE7D30800A463A3 /* Keychain.swift */; };
 		2AF9EB052AE9BC29009F0935 /* DateAndTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9EB042AE9BC29009F0935 /* DateAndTime.swift */; };
 		2AF9EB072AE9DA8D009F0935 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9EB062AE9DA8D009F0935 /* Extensions.swift */; };
+		7A11D9932D4ABDC9003EB809 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9922D4ABDC5003EB809 /* AuthenticationManager.swift */; };
+		7A11D9952D4ABDE9003EB809 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9942D4ABDE6003EB809 /* AlertManager.swift */; };
+		7A11D9972D4ABE04003EB809 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9962D4ABE02003EB809 /* LoginService.swift */; };
+		7A11D99A2D4ABE2D003EB809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9992D4ABE2A003EB809 /* User.swift */; };
 		7A1AF4232D3DF00700DA438A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AF4222D3DF00700DA438A /* Music.swift */; };
+		7AD347E42D595BBE0019AE68 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD347E32D595BB80019AE68 /* ProfileModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +69,13 @@
 		2AECF5C52AE7D30800A463A3 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		2AF9EB042AE9BC29009F0935 /* DateAndTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTime.swift; sourceTree = "<group>"; };
 		2AF9EB062AE9DA8D009F0935 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7A11D9922D4ABDC5003EB809 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		7A11D9942D4ABDE6003EB809 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		7A11D9962D4ABE02003EB809 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		7A11D9992D4ABE2A003EB809 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A1AF4222D3DF00700DA438A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		7AA654C32D4143AE0074A73B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7AD347E32D595BB80019AE68 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,7 @@
 		2A18C94F2AE6BFE6005A3F7C = {
 			isa = PBXGroup;
 			children = (
+				7AA654C32D4143AE0074A73B /* .gitignore */,
 				2A18C95A2AE6BFE6005A3F7C /* ovk */,
 				2A18C9592AE6BFE6005A3F7C /* Products */,
 			);
@@ -99,6 +111,8 @@
 		2A18C95A2AE6BFE6005A3F7C /* ovk */ = {
 			isa = PBXGroup;
 			children = (
+				7A11D9982D4ABE23003EB809 /* Models */,
+				7A11D9912D4ABDB2003EB809 /* Managers */,
 				2A95C5602AE8F21B0042F64C /* Screens */,
 				2A95C55D2AE8EA9A0042F64C /* Errors */,
 				2A6FE3382AE7B47100F1D694 /* Views */,
@@ -193,6 +207,25 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		7A11D9912D4ABDB2003EB809 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7A11D9962D4ABE02003EB809 /* LoginService.swift */,
+				7A11D9942D4ABDE6003EB809 /* AlertManager.swift */,
+				7A11D9922D4ABDC5003EB809 /* AuthenticationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7A11D9982D4ABE23003EB809 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7AD347E32D595BB80019AE68 /* ProfileModel.swift */,
+				7A11D9992D4ABE2A003EB809 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,21 +307,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A606A402AF37CF4001789D7 /* UserInfoPopup.swift in Sources */,
+				7A11D9972D4ABE04003EB809 /* LoginService.swift in Sources */,
 				2A95C5682AE909E20042F64C /* LoginSettings.swift in Sources */,
 				2A18C95E2AE6BFE6005A3F7C /* LoginView.swift in Sources */,
 				2A28D6812AE9141300531DC9 /* About.swift in Sources */,
+				7A11D99A2D4ABE2D003EB809 /* User.swift in Sources */,
 				2A28D6892AE965B400531DC9 /* Profile.swift in Sources */,
 				2A28D68B2AE968A100531DC9 /* API.swift in Sources */,
 				2A6FE33C2AE7BA4700F1D694 /* JSONthings.swift in Sources */,
 				7A1AF4232D3DF00700DA438A /* Music.swift in Sources */,
 				2A95C5662AE8F6310042F64C /* MainScreen.swift in Sources */,
+				7A11D9932D4ABDC9003EB809 /* AuthenticationManager.swift in Sources */,
 				2A28D6852AE959D400531DC9 /* Localization.swift in Sources */,
 				2A95C5642AE8F24F0042F64C /* MainView.swift in Sources */,
 				2A8139F72B19DB9100BB471C /* Feed.swift in Sources */,
+				7AD347E42D595BBE0019AE68 /* ProfileModel.swift in Sources */,
 				2A6FE33A2AE7B47D00F1D694 /* WebView.swift in Sources */,
 				2A6FE3372AE7A32100F1D694 /* LogIn.swift in Sources */,
 				2A28D6832AE92A7800531DC9 /* UserDefaults.swift in Sources */,
 				2A78FA892B3B0EA200F1E106 /* Structs.swift in Sources */,
+				7A11D9952D4ABDE9003EB809 /* AlertManager.swift in Sources */,
 				2AF9EB052AE9BC29009F0935 /* DateAndTime.swift in Sources */,
 				2A18C95C2AE6BFE6005A3F7C /* ovkApp.swift in Sources */,
 				2AECF5C62AE7D30800A463A3 /* Keychain.swift in Sources */,
@@ -430,7 +468,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26.12.23;
+				CURRENT_PROJECT_VERSION = 22.01.25;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
 				DEVELOPMENT_TEAM = GCF46TATC9;
 				ENABLE_PREVIEWS = YES;
@@ -447,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "0.2.5-a";
+				MARKETING_VERSION = 0.2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -466,7 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26.12.23;
+				CURRENT_PROJECT_VERSION = 22.01.25;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
 				DEVELOPMENT_TEAM = GCF46TATC9;
 				ENABLE_PREVIEWS = YES;
@@ -483,7 +521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "0.2.5-a";
+				MARKETING_VERSION = 0.2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
