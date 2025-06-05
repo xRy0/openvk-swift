@@ -50,7 +50,7 @@ struct Profile: View {
 
     
     func clearProfileVariables() {
-        isMoreInfoPopupOpened = false
+        //isMoreInfoPopupOpened = false
         error = false
         errorReason = ""
         
@@ -273,6 +273,15 @@ struct Profile: View {
                         isMoreInfoPopupOpened = true
                     }
                     .frame(maxWidth: .infinity, alignment: .center)
+                    .sheet(isPresented: $isMoreInfoPopupOpened) {
+                        //NavigationView {
+                            Text("test")
+                            //UserInfoPopup(profileObject: $profileObject)
+                                //.navigationTitle("Информация")
+                                //.navigationBarTitleDisplayMode(.inline)
+                        //}
+                        //.navigationViewStyle(.stack)
+                    }
                 }.modifier(FormElevateOnWhiteBackground())
                 
                 
@@ -372,14 +381,7 @@ struct Profile: View {
                     }
                 }
                 .listRowBackground(Color.clear)
-                .sheet(isPresented: $isMoreInfoPopupOpened, content: {
-                    NavigationView {
-                        UserInfoPopup(profileObject: $profileObject)
-                            .navigationTitle("Информация")
-                            .navigationBarTitleDisplayMode(.inline)
-                    }
-                    .navigationViewStyle(.stack)
-                })
+                
             }
             else {
                 if debug {

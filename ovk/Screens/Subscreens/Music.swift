@@ -19,7 +19,30 @@ struct Music: View {
         }
         List {
             HStack {
-                AsyncImage(url: URL(string: "https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2021-02-do-you-feel-o.k-picturesque-1024x1024.jpg"))
+                AsyncImage(url: URL(string: "https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2021-02-do-you-feel-o.k-picturesque-1024x1024.jpg")){ result in
+                    result.image?
+                    .resizable()
+                    
+                }
+                    .frame(width: 50, height: 50)
+                VStack(alignment: .leading) {
+                    Text("Song name")
+                        .font(.headline)
+                    Text("author")
+                        .font(.subheadline)
+                        .foregroundColor(Color.gray)
+                        
+                }
+                Spacer()
+                Text("3:42")
+                    .foregroundColor(Color.gray)
+            }
+            HStack {
+                AsyncImage(url: URL(string: "https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2021-02-do-you-feel-o.k-picturesque-1024x1024.jpg")){ result in
+                    result.image?
+                    .resizable()
+                    
+                }
                     .frame(width: 50.0, height: 50.0)
                 VStack(alignment: .leading) {
                     Text("Song name")
@@ -34,22 +57,11 @@ struct Music: View {
                     .foregroundColor(Color.gray)
             }
             HStack {
-                AsyncImage(url: URL(string: "https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2021-02-do-you-feel-o.k-picturesque-1024x1024.jpg"))
-                    .frame(width: 50.0, height: 50.0)
-                VStack(alignment: .leading) {
-                    Text("Song name")
-                        .font(.headline)
-                    Text("author")
-                        .font(.subheadline)
-                        .foregroundColor(Color.gray)
-                        
+                AsyncImage(url: URL(string: "https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2021-02-do-you-feel-o.k-picturesque-1024x1024.jpg")){ result in
+                    result.image?
+                    .resizable()
+                    
                 }
-                Spacer()
-                Text("3:42")
-                    .foregroundColor(Color.gray)
-            }
-            HStack {
-                AsyncImage(url: URL(string: "https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2021-02-do-you-feel-o.k-picturesque-1024x1024.jpg"))
                     .frame(width: 50.0, height: 50.0)
                 VStack(alignment: .leading) {
                     Text("Song name")

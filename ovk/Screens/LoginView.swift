@@ -11,19 +11,7 @@ struct LoginView: View {
     @Binding var debug: Bool
     @Binding var isMainViewUpdated: Bool
     
-    @State private var instance: String = "https://ovk.to"
-    @State private var login: String = ""
-    @State private var password: String = ""
-    @State private var twoFA: String = ""
-    @State private var showAlert: Bool = false
-    @State private var showError: Bool = false
-    @State private var alertText: String = ""
-    @State private var isLoading: Bool = false
-    @State private var customToken = ""
-    @State private var show2FA = false
-    @State private var webViewURL: URL =  URL(string: "https://ovk.to/reg")!
-    @State private var isWebViewOpened = false
-    
+    @StateObject var LoginObj = LoginPresenter(instance: "https://ovk.to")
     
     var body: some View {
         NavigationView {
@@ -31,13 +19,13 @@ struct LoginView: View {
                 // Debug section
                 if debug {
                     Section(header: Text("Debug")) {
-                        TextField("Token", text: $customToken)
+                        TextField("Token", text: $LoginObj.debugToken)
                         Button("Войти") {
-                            handleCustomTokenLogin(customToken: customToken, instance: instance)
+                            LoginObj.handleCustomTokenLogin()
                         }
                     }
                 }
-                
+   /*
                 // Instance section
                 Section(header: Text("Инстанс")) {
                     TextField("Адрес", text: $instance)
@@ -107,46 +95,11 @@ struct LoginView: View {
             .toolbar {
                 NavigationLink(destination: LoginSettings(debug: $debug, isMainViewUpdated: $isMainViewUpdated)) {
                     Image(systemName: "gearshape")
-                }
+                }*/
             }
         }.navigationViewStyle(.stack)
     }
-    private func handleCustomTokenLogin(customToken: String, instance: String) {
-            if !saveValueToKeychain(forKey: "token", value: customToken) {
-                alertText = "Токен не может быть сохранён, так как имеется другой"
-                showAlert = true
-                showError = true
-            } else {
-                isMainViewUpdated.toggle()
-                saveValueToUserDefaults(forKey: "instance", value: instance)
-            }
-        }
-        
-    private func handleLogin(instance: String, login: String, password: String) {
-            isLoading = true
-            LoginService.shared.login(instance: instance, username: login, password: password) { response in
-                isLoading = false
-                
-                if let errorMsg = response?["error_msg"] as? String {
-                    if errorMsg == "Invalid 2FA code" && !show2FA {
-                        show2FA = true
-                    } else {
-                        alertText = errorMsg
-                        showAlert = true
-                        showError = true
-                    }
-                } else if let token = response?["access_token"] as? String {
-                    if !saveValueToKeychain(forKey: "token", value: token) {
-                        alertText = "Токен не может быть сохранён, так как имеется другой"
-                        showAlert = true
-                        showError = true
-                    } else {
-                        isMainViewUpdated.toggle()
-                        saveValueToUserDefaults(forKey: "instance", value: instance)
-                    }
-                }
-            }
-        }
+    
 }
 
 #Preview {

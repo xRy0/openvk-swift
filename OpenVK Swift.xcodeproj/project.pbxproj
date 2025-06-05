@@ -40,6 +40,7 @@
 		7A11D99A2D4ABE2D003EB809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9992D4ABE2A003EB809 /* User.swift */; };
 		7A1AF4232D3DF00700DA438A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AF4222D3DF00700DA438A /* Music.swift */; };
 		7AD347E42D595BBE0019AE68 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD347E32D595BB80019AE68 /* ProfileModel.swift */; };
+		7AD91DB52DF22D8600EA9C83 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD91DB42DF22D7400EA9C83 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		7A1AF4222D3DF00700DA438A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		7AA654C32D4143AE0074A73B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7AD347E32D595BB80019AE68 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		7AD91DB42DF22D7400EA9C83 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		2A18C95A2AE6BFE6005A3F7C /* ovk */ = {
 			isa = PBXGroup;
 			children = (
+				7AD91DB32DF22D1600EA9C83 /* Presenters */,
 				7A11D9982D4ABE23003EB809 /* Models */,
 				7A11D9912D4ABDB2003EB809 /* Managers */,
 				2A95C5602AE8F21B0042F64C /* Screens */,
@@ -226,6 +229,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		7AD91DB32DF22D1600EA9C83 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				7AD91DB42DF22D7400EA9C83 /* LoginPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,6 +335,7 @@
 				7AD347E42D595BBE0019AE68 /* ProfileModel.swift in Sources */,
 				2A6FE33A2AE7B47D00F1D694 /* WebView.swift in Sources */,
 				2A6FE3372AE7A32100F1D694 /* LogIn.swift in Sources */,
+				7AD91DB52DF22D8600EA9C83 /* LoginPresenter.swift in Sources */,
 				2A28D6832AE92A7800531DC9 /* UserDefaults.swift in Sources */,
 				2A78FA892B3B0EA200F1E106 /* Structs.swift in Sources */,
 				7A11D9952D4ABDE9003EB809 /* AlertManager.swift in Sources */,

@@ -31,6 +31,7 @@
 
     },
     "2FA" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -333,6 +334,9 @@
     "Navigate" : {
 
     },
+    "ntrcn %@" : {
+
+    },
     "online" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -351,6 +355,7 @@
       }
     },
     "OpenVK" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -392,6 +397,9 @@
 
     },
     "Telegram" : {
+
+    },
+    "test" : {
 
     },
     "time_spelling_a" : {
@@ -513,6 +521,7 @@
       }
     },
     "Адрес" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -606,6 +615,7 @@
       }
     },
     "Данные для входа" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -659,6 +669,7 @@
       }
     },
     "Зарегистрироваться в браузере" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -681,6 +692,7 @@
       }
     },
     "Инстанс" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -713,6 +725,7 @@
       }
     },
     "Информация" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -745,6 +758,7 @@
       }
     },
     "Логин" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -907,6 +921,7 @@
 
     },
     "Пароль" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1093,6 +1108,7 @@
       }
     },
     "Сбросить пароль" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

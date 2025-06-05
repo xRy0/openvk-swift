@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var debug = false
+    @State private var debug = true
     @State private var isMainViewUpdated = false
     
     var body: some View {
@@ -19,7 +19,6 @@ struct MainView: View {
                 LoginView(debug: $debug, isMainViewUpdated: $isMainViewUpdated)
             }
         }
-        .background(isMainViewUpdated ? Color.clear : Color.clear)
     }
 }
 
