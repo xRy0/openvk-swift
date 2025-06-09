@@ -18,7 +18,7 @@ struct MainView: View {
             } else {
                 LoginView(debug: $debug, isMainViewUpdated: $isMainViewUpdated)
             }
-        }
+        }.background(isMainViewUpdated ? Color.clear : Color.clear)
     }
 }
 

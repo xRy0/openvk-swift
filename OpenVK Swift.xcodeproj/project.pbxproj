@@ -36,7 +36,6 @@
 		2AF9EB072AE9DA8D009F0935 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9EB062AE9DA8D009F0935 /* Extensions.swift */; };
 		7A11D9932D4ABDC9003EB809 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9922D4ABDC5003EB809 /* AuthenticationManager.swift */; };
 		7A11D9952D4ABDE9003EB809 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9942D4ABDE6003EB809 /* AlertManager.swift */; };
-		7A11D9972D4ABE04003EB809 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9962D4ABE02003EB809 /* LoginService.swift */; };
 		7A11D99A2D4ABE2D003EB809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9992D4ABE2A003EB809 /* User.swift */; };
 		7A1AF4232D3DF00700DA438A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AF4222D3DF00700DA438A /* Music.swift */; };
 		7AD347E42D595BBE0019AE68 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD347E32D595BB80019AE68 /* ProfileModel.swift */; };
@@ -72,7 +71,6 @@
 		2AF9EB062AE9DA8D009F0935 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7A11D9922D4ABDC5003EB809 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		7A11D9942D4ABDE6003EB809 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
-		7A11D9962D4ABE02003EB809 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		7A11D9992D4ABE2A003EB809 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A1AF4222D3DF00700DA438A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		7AA654C32D4143AE0074A73B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 		7A11D9912D4ABDB2003EB809 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				7A11D9962D4ABE02003EB809 /* LoginService.swift */,
 				7A11D9942D4ABDE6003EB809 /* AlertManager.swift */,
 				7A11D9922D4ABDC5003EB809 /* AuthenticationManager.swift */,
 			);
@@ -318,7 +315,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A606A402AF37CF4001789D7 /* UserInfoPopup.swift in Sources */,
-				7A11D9972D4ABE04003EB809 /* LoginService.swift in Sources */,
 				2A95C5682AE909E20042F64C /* LoginSettings.swift in Sources */,
 				2A18C95E2AE6BFE6005A3F7C /* LoginView.swift in Sources */,
 				2A28D6812AE9141300531DC9 /* About.swift in Sources */,
@@ -480,9 +476,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22.01.25;
+				CURRENT_PROJECT_VERSION = 090625;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
-				DEVELOPMENT_TEAM = GCF46TATC9;
+				DEVELOPMENT_TEAM = Q29QBUH82S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = OpenVK;
@@ -497,7 +493,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.6;
+				MARKETING_VERSION = 0.2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -516,9 +512,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22.01.25;
+				CURRENT_PROJECT_VERSION = 090625;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
-				DEVELOPMENT_TEAM = GCF46TATC9;
+				DEVELOPMENT_TEAM = Q29QBUH82S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = OpenVK;
@@ -533,7 +529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.6;
+				MARKETING_VERSION = 0.2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

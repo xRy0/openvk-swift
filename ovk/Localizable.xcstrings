@@ -221,6 +221,9 @@
         }
       }
     },
+    "https://example.com" : {
+
+    },
     "ID" : {
       "localizations" : {
         "ru" : {
@@ -334,9 +337,6 @@
     "Navigate" : {
 
     },
-    "ntrcn %@" : {
-
-    },
     "online" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -355,7 +355,6 @@
       }
     },
     "OpenVK" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -553,6 +552,12 @@
         }
       }
     },
+    "Введите адрес инстанса" : {
+
+    },
+    "Введите код двухфакторной аутентификации" : {
+
+    },
     "Введите текст:" : {
 
     },
@@ -615,7 +620,6 @@
       }
     },
     "Данные для входа" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -636,6 +640,15 @@
           }
         }
       }
+    },
+    "Добавить" : {
+
+    },
+    "Добавить инстанс" : {
+
+    },
+    "Добавленные инстансы" : {
+
     },
     "Друзья" : {
       "localizations" : {
@@ -669,7 +682,6 @@
       }
     },
     "Зарегистрироваться в браузере" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -692,7 +704,6 @@
       }
     },
     "Инстанс" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -713,6 +724,9 @@
           }
         }
       }
+    },
+    "Инстансы" : {
+
     },
     "Интересы" : {
       "localizations" : {
@@ -757,8 +771,10 @@
         }
       }
     },
+    "Код" : {
+
+    },
     "Логин" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -917,11 +933,16 @@
         }
       }
     },
+    "Основные инстансы" : {
+
+    },
+    "Отмена" : {
+
+    },
     "Отправить" : {
 
     },
     "Пароль" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1085,6 +1106,9 @@
     "Разработчики" : {
 
     },
+    "Редактировать список" : {
+
+    },
     "Режим разработчика" : {
       "localizations" : {
         "en" : {
@@ -1108,7 +1132,6 @@
       }
     },
     "Сбросить пароль" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1151,6 +1174,9 @@
           }
         }
       }
+    },
+    "Требуется 2FA код" : {
+
     }
   },
   "version" : "1.0"

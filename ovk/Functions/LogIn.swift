@@ -25,20 +25,28 @@ func LogIn(login: String, password: String, instance: String, code: String="", c
         // Создаем dataTask для выполнения GET-запроса
         let task = session.dataTask(with: url) { (data, response, error) in
             if let error = error {
-                completion(["error_msg": error.localizedDescription])
+                DispatchQueue.main.async {
+                    completion(["error_msg": error.localizedDescription])
+                }
                 return
             } else if let data = data {
                 // Обрабатываем полученные данные
                 let responseString = String(data: data, encoding: .utf8)
-                do {
-                    try completion(JSONtoDict(from: responseString!))
-                }
-                catch let error {
-                    if error.localizedDescription == "The data couldn’t be read because it isn’t in the correct format." {
-                        completion(["error_msg": "Не удалось прочитать JSON. Вы уверены что ввели верный адрес инстанса OpenVK?"])
+                DispatchQueue.main.async {
+                    do {
+                        try completion(JSONtoDict(from: responseString!))
                     }
-                    else {
-                        completion(["error_msg": error.localizedDescription])
+                    catch let error {
+                        if error.localizedDescription == "The data couldn’t be read because it isn’t in the correct format." {
+                            DispatchQueue.main.async {
+                                completion(["error_msg": "Не удалось прочитать JSON. Вы уверены что ввели верный адрес инстанса OpenVK?"])
+                            }
+                        }
+                        else {
+                            DispatchQueue.main.async {
+                                completion(["error_msg": error.localizedDescription])
+                            }
+                        }
                     }
                 }
                 return

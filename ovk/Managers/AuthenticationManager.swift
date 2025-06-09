@@ -14,7 +14,7 @@ class AuthenticationManager {
         return getValueFromKeychain(forKey: "token") != nil
     }
     
-    func login(instance: String, username: String, password: String, completion: @escaping ([String: Any]?) -> Void) {
-        LogIn(login: username, password: password, instance: instance, completion: completion)
+    func login(instance: String, username: String, password: String, code: String="", completion: @escaping ([String: Any]?) -> Void) {
+        LogIn(login: username, password: password, instance: instance, code: code, completion: completion)
     }
 }
