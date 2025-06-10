@@ -1,2 +1,5 @@
 bundles:
   - 2
+files:
+  - source: /ovk/*.xcstrings
+    translation: /ovk/l10n-%two_letters_code%.xcstrings
