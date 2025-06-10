@@ -1,0 +1,2753 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%@"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@ (%@)" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ (%2$@)"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "1" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "1"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "1"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "1"
+          }
+        }
+      }
+    },
+    "2FA" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Двойная аутентификация"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Двойная аутентификация"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2FA"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Двойная аутентификация"
+          }
+        }
+      }
+    },
+    "3:42" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "3:42"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "3:42"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "3:42"
+          }
+        }
+      }
+    },
+    "ago" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "назад"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "назад"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ago"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "назад"
+          }
+        }
+      }
+    },
+    "at" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "at"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в"
+          }
+        }
+      }
+    },
+    "author" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "author"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "author"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "author"
+          }
+        }
+      }
+    },
+    "Debug" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отладка"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отладка"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отладка"
+          }
+        }
+      }
+    },
+    "Destination" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Destination"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Destination"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Destination"
+          }
+        }
+      }
+    },
+    "E-mail" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "E-mail"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "E-mail"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "E-mail"
+          }
+        }
+      }
+    },
+    "Feed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Лента"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Лента"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Лента"
+          }
+        }
+      }
+    },
+    "from" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "с"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "с"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "from"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "с"
+          }
+        }
+      }
+    },
+    "from_2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "из"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "из"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "from"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "из"
+          }
+        }
+      }
+    },
+    "gender_female_a" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "а "
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "а "
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "а "
+          }
+        }
+      }
+    },
+    "gender_male_a" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "GitHub" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "GitHub"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "GitHub"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "GitHub"
+          }
+        }
+      }
+    },
+    "hour" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "час"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "час"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hour"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "час"
+          }
+        }
+      }
+    },
+    "https://example.com" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "https://example.com"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "https://example.com"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "https://example.com"
+          }
+        }
+      }
+    },
+    "ID" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ID"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ID"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ID"
+          }
+        }
+      }
+    },
+    "in" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "in"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в"
+          }
+        }
+      }
+    },
+    "IsamiRi" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "IsamiRi"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "IsamiRi"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IsamiRi"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "IsamiRi"
+          }
+        }
+      }
+    },
+    "isamiri.ru" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "isamiri.ru"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "isamiri.ru"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "isamiri.ru"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "isamiri.ru"
+          }
+        }
+      }
+    },
+    "Key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ключ"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ключ"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ключ"
+          }
+        }
+      }
+    },
+    "Loading..." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Загрузка..."
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Загрузка..."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading..."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Загрузка..."
+          }
+        }
+      }
+    },
+    "minutes_ago" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "минут назад"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "минут назад"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutes ago"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "минут назад"
+          }
+        }
+      }
+    },
+    "Navigate" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Navigate"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Navigate"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Navigate"
+          }
+        }
+      }
+    },
+    "online" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в сети"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в сети"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "online"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "в сети"
+          }
+        }
+      }
+    },
+    "OpenVK" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OpenVK"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OpenVK"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OpenVK"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OpenVK"
+          }
+        }
+      }
+    },
+    "OpenVK Swift" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OpenVK Swift"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OpenVK Swift"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OpenVK Swift"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OpenVK Swift"
+          }
+        }
+      }
+    },
+    "Ry0" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ry0"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ry0"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ry0"
+          }
+        }
+      }
+    },
+    "ry0.ru" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ry0.ru"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ry0.ru"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ry0.ru"
+          }
+        }
+      }
+    },
+    "Song name" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Song name"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Song name"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Song name"
+          }
+        }
+      }
+    },
+    "Telegram" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Telegram"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Telegram"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Telegram"
+          }
+        }
+      }
+    },
+    "test" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "test"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "test"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "test"
+          }
+        }
+      }
+    },
+    "time_spelling_a" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "time_spelling_b" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ов "
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ов "
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "s "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ов "
+          }
+        }
+      }
+    },
+    "time_spelling_c" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "а "
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "а "
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "s "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "а "
+          }
+        }
+      }
+    },
+    "Token" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Token"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Token"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Token"
+          }
+        }
+      }
+    },
+    "User ID:" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "User ID:"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "User ID:"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "User ID:"
+          }
+        }
+      }
+    },
+    "UserDefaults" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "UserDefaults"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "UserDefaults"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UserDefaults"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "UserDefaults"
+          }
+        }
+      }
+    },
+    "Veselcraft" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Veselcraft"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Veselcraft"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Veselcraft"
+          }
+        }
+      }
+    },
+    "veselcraft.ru" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "veselcraft.ru"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "veselcraft.ru"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "veselcraft.ru"
+          }
+        }
+      }
+    },
+    "Was" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Был"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Был"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Was"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Был"
+          }
+        }
+      }
+    },
+    "Автор" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Автор"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Автор"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Author"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Автор"
+          }
+        }
+      }
+    },
+    "Адрес" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Адрес"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Адрес"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Адрес"
+          }
+        }
+      }
+    },
+    "Альбомы" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Albums"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Введите адрес инстанса" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите адрес инстанса"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите адрес инстанса"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите адрес инстанса"
+          }
+        }
+      }
+    },
+    "Введите код двухфакторной аутентификации" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите код двухфакторной аутентификации"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите код двухфакторной аутентификации"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите код двухфакторной аутентификации"
+          }
+        }
+      }
+    },
+    "Введите текст:" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите текст:"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите текст:"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Введите текст:"
+          }
+        }
+      }
+    },
+    "Войти" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Войти"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Войти"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Войти"
+          }
+        }
+      }
+    },
+    "Выйти" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Выйти"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Выйти"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log Out"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Выйти"
+          }
+        }
+      }
+    },
+    "Город" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "City"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Группы" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Groups"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Данные для входа" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Данные для входа"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Данные для входа"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login details"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Данные для входа"
+          }
+        }
+      }
+    },
+    "Добавить" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавить"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавить"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавить"
+          }
+        }
+      }
+    },
+    "Добавить инстанс" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавить инстанс"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавить инстанс"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавить инстанс"
+          }
+        }
+      }
+    },
+    "Добавленные инстансы" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавленные инстансы"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавленные инстансы"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Добавленные инстансы"
+          }
+        }
+      }
+    },
+    "Друзья" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Friends"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Загрузка..." : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading..."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Зайти через токен (обратите внимание, что будет использован инстанс указанный ниже, так же обратите внимание что нет проверки на верность токена):" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login by token:"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Зарегистрироваться в браузере" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Зарегистрироваться в браузере"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Зарегистрироваться в браузере"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Register in browser"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Зарегистрироваться в браузере"
+          }
+        }
+      }
+    },
+    "Инстанс" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Инстанс"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Инстанс"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instance"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Инстанс"
+          }
+        }
+      }
+    },
+    "Инстансы" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Инстансы"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Инстансы"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Инстансы"
+          }
+        }
+      }
+    },
+    "Интересы" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interests"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Информация" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Исходный код" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Исходный код"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Исходный код"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source code"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Исходный код"
+          }
+        }
+      }
+    },
+    "Код" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Код"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Код"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Код"
+          }
+        }
+      }
+    },
+    "Логин" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Логин"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Логин"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Логин"
+          }
+        }
+      }
+    },
+    "Любимая музыка" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorite music"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Любимые книги" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorite books"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Любимые ТВ-шоу" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorite TV-shows"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Любимые фильмы" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorite movies"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Любимые цитаты" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorite quotes"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Местоимения" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronouns"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Название" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Название"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Название"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Название"
+          }
+        }
+      }
+    },
+    "Настройки" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Настройки"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Настройки"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Настройки"
+          }
+        }
+      }
+    },
+    "Никогда" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Никогда"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Никогда"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Never"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Никогда"
+          }
+        }
+      }
+    },
+    "Новая запись" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Новая запись"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Новая запись"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Новая запись"
+          }
+        }
+      }
+    },
+    "О приложении" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "О приложении"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "О приложении"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "О приложении"
+          }
+        }
+      }
+    },
+    "О себе" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Основные инстансы" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Основные инстансы"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Основные инстансы"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Основные инстансы"
+          }
+        }
+      }
+    },
+    "Отмена" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отмена"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отмена"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отмена"
+          }
+        }
+      }
+    },
+    "Отправить" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отправить"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отправить"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Отправить"
+          }
+        }
+      }
+    },
+    "Пароль" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Пароль"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Пароль"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Пароль"
+          }
+        }
+      }
+    },
+    "Повторить попытку" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try again"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Подписчики" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Followers"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Показать информацию" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Info"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Получить" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Получить"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Получить"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Получить"
+          }
+        }
+      }
+    },
+    "Получить профиль другого пользователя" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Получить профиль другого пользователя"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Получить профиль другого пользователя"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get another user's profile"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Получить профиль другого пользователя"
+          }
+        }
+      }
+    },
+    "Получить/обновить страницу" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get/Refresh"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Посты" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posts"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Прикреплён опрос: %@" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poll attached: %@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Прикреплено аудио: %@ - %@" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audio attached: %1$@ - %2$@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Прикреплено видео: %@" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video attached: %@"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Произошла ошибка загрузки профиля: %@" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There was an error loading profile: %@ :("
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "Профиль" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Профиль"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Профиль"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Профиль"
+          }
+        }
+      }
+    },
+    "Разработчики" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Разработчики"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Разработчики"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Разработчики"
+          }
+        }
+      }
+    },
+    "Редактировать список" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Редактировать список"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Редактировать список"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Редактировать список"
+          }
+        }
+      }
+    },
+    "Режим разработчика" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Режим разработчика"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Режим разработчика"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developer mode"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Режим разработчика"
+          }
+        }
+      }
+    },
+    "Сбросить пароль" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Сбросить пароль"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Сбросить пароль"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset password"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Сбросить пароль"
+          }
+        }
+      }
+    },
+    "Ссылки" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ссылки"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ссылки"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Links"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ссылки"
+          }
+        }
+      }
+    },
+    "Требуется 2FA код" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Требуется 2FA код"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Требуется 2FA код"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Требуется 2FA код"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
