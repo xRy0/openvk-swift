@@ -522,28 +522,6 @@
         }
       }
     },
-    "https://example.com" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "https://example.com"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "https://example.com"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "https://example.com"
-          }
-        }
-      }
-    },
     "ID" : {
       "localizations" : {
         "" : {
@@ -1272,50 +1250,6 @@
         }
       }
     },
-    "Введите адрес инстанса" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите адрес инстанса"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите адрес инстанса"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите адрес инстанса"
-          }
-        }
-      }
-    },
-    "Введите код двухфакторной аутентификации" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите код двухфакторной аутентификации"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите код двухфакторной аутентификации"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите код двухфакторной аутентификации"
-          }
-        }
-      }
-    },
     "Введите текст:" : {
       "localizations" : {
         "" : {
@@ -1496,28 +1430,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Добавить"
-          }
-        }
-      }
-    },
-    "Добавить инстанс" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Добавить инстанс"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Добавить инстанс"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Добавить инстанс"
           }
         }
       }
@@ -1788,28 +1700,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Исходный код"
-          }
-        }
-      }
-    },
-    "Код" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Код"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Код"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Код"
           }
         }
       }
@@ -2185,28 +2075,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Основные инстансы"
-          }
-        }
-      }
-    },
-    "Отмена" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Отмена"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Отмена"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Отмена"
           }
         }
       }
@@ -2722,28 +2590,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Ссылки"
-          }
-        }
-      }
-    },
-    "Требуется 2FA код" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Требуется 2FA код"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Требуется 2FA код"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Требуется 2FA код"
           }
         }
       }
