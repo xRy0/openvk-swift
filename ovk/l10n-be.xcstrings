@@ -1,28 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : ""
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : ""
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : ""
-          }
-        }
-      }
-    },
     "%@" : {
       "localizations" : {
         "" : {
@@ -97,6 +75,28 @@
           "stringUnit" : {
             "state" : "new",
             "value" : ""
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%lld"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%lld"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%lld"
           }
         }
       }
@@ -304,28 +304,6 @@
         }
       }
     },
-    "E-mail" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "E-mail"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "E-mail"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "E-mail"
-          }
-        }
-      }
-    },
     "Feed" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -523,6 +501,7 @@
       }
     },
     "ID" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -889,50 +868,6 @@
         }
       }
     },
-    "Telegram" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Telegram"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Telegram"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Telegram"
-          }
-        }
-      }
-    },
-    "test" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "test"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "test"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "test"
-          }
-        }
-      }
-    },
     "time_spelling_a" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1038,28 +973,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Token"
-          }
-        }
-      }
-    },
-    "User ID:" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "User ID:"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "User ID:"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "User ID:"
           }
         }
       }
@@ -1223,6 +1136,7 @@
       }
     },
     "Альбомы" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1246,28 +1160,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : ""
-          }
-        }
-      }
-    },
-    "Введите текст:" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите текст:"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите текст:"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Введите текст:"
           }
         }
       }
@@ -1329,6 +1221,7 @@
       }
     },
     "Город" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1357,6 +1250,7 @@
       }
     },
     "Группы" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1457,6 +1351,7 @@
       }
     },
     "Друзья" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1485,6 +1380,7 @@
       }
     },
     "Загрузка..." : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1620,6 +1516,7 @@
       }
     },
     "Интересы" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1733,6 +1630,7 @@
       }
     },
     "Любимая музыка" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1761,6 +1659,7 @@
       }
     },
     "Любимые книги" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1789,6 +1688,7 @@
       }
     },
     "Любимые ТВ-шоу" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1817,6 +1717,7 @@
       }
     },
     "Любимые фильмы" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1845,6 +1746,7 @@
       }
     },
     "Любимые цитаты" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1873,6 +1775,7 @@
       }
     },
     "Местоимения" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -1979,28 +1882,6 @@
         }
       }
     },
-    "Новая запись" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Новая запись"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Новая запись"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Новая запись"
-          }
-        }
-      }
-    },
     "О приложении" : {
       "localizations" : {
         "" : {
@@ -2030,6 +1911,7 @@
       }
     },
     "О себе" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2079,28 +1961,6 @@
         }
       }
     },
-    "Отправить" : {
-      "localizations" : {
-        "" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Отправить"
-          }
-        },
-        "be" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Отправить"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Отправить"
-          }
-        }
-      }
-    },
     "Пароль" : {
       "localizations" : {
         "" : {
@@ -2130,6 +1990,7 @@
       }
     },
     "Повторить попытку" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2158,6 +2019,7 @@
       }
     },
     "Подписчики" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2186,6 +2048,7 @@
       }
     },
     "Показать информацию" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2214,6 +2077,7 @@
       }
     },
     "Получить" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2242,6 +2106,7 @@
       }
     },
     "Получить профиль другого пользователя" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2270,6 +2135,7 @@
       }
     },
     "Получить/обновить страницу" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2411,6 +2277,7 @@
       }
     },
     "Произошла ошибка загрузки профиля: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
