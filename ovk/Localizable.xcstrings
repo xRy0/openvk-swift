@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-
-    },
     "%@" : {
 
     },
@@ -26,6 +23,9 @@
           }
         }
       }
+    },
+    "%lld" : {
+
     },
     "1" : {
 
@@ -104,9 +104,6 @@
       }
     },
     "Destination" : {
-
-    },
-    "E-mail" : {
 
     },
     "Feed" : {
@@ -222,6 +219,7 @@
       }
     },
     "ID" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -392,12 +390,6 @@
     "Song name" : {
 
     },
-    "Telegram" : {
-
-    },
-    "test" : {
-
-    },
     "time_spelling_a" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -450,9 +442,6 @@
       }
     },
     "Token" : {
-
-    },
-    "User ID:" : {
 
     },
     "UserDefaults" : {
@@ -540,6 +529,7 @@
       }
     },
     "Альбомы" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -548,9 +538,6 @@
           }
         }
       }
-    },
-    "Введите текст:" : {
-
     },
     "Войти" : {
       "localizations" : {
@@ -591,6 +578,7 @@
       }
     },
     "Город" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -601,6 +589,7 @@
       }
     },
     "Группы" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -639,6 +628,7 @@
 
     },
     "Друзья" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -649,6 +639,7 @@
       }
     },
     "Загрузка..." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -717,6 +708,7 @@
 
     },
     "Интересы" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -782,6 +774,7 @@
       }
     },
     "Любимая музыка" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -792,6 +785,7 @@
       }
     },
     "Любимые книги" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -802,6 +796,7 @@
       }
     },
     "Любимые ТВ-шоу" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -812,6 +807,7 @@
       }
     },
     "Любимые фильмы" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -822,6 +818,7 @@
       }
     },
     "Любимые цитаты" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -832,6 +829,7 @@
       }
     },
     "Местоимения" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -883,9 +881,6 @@
         }
       }
     },
-    "Новая запись" : {
-
-    },
     "О приложении" : {
       "localizations" : {
         "en" : {
@@ -909,6 +904,7 @@
       }
     },
     "О себе" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -919,9 +915,6 @@
       }
     },
     "Основные инстансы" : {
-
-    },
-    "Отправить" : {
 
     },
     "Пароль" : {
@@ -947,6 +940,7 @@
       }
     },
     "Повторить попытку" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -957,6 +951,7 @@
       }
     },
     "Подписчики" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -967,6 +962,7 @@
       }
     },
     "Показать информацию" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -977,6 +973,7 @@
       }
     },
     "Получить" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -993,6 +990,7 @@
       }
     },
     "Получить профиль другого пользователя" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1009,6 +1007,7 @@
       }
     },
     "Получить/обновить страницу" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1060,6 +1059,7 @@
       }
     },
     "Произошла ошибка загрузки профиля: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

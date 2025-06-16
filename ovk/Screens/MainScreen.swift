@@ -33,7 +33,7 @@ struct MainScreen: View {
         if UIDevice.isiPhone {
             NavigationView {
                 TabView (selection: $selectedTab) {
-                    Profile(debug: $debug, isMainViewUpdated: $isMainViewUpdated, profileHeader: $profileHeader, userIDtoGet: "0", imageURL: $imageURL, viewerShown: $viewerShown)
+                    ProfileView()
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                         .tabItem {
                             Image(systemName: "person.crop.circle")
@@ -76,10 +76,10 @@ struct MainScreen: View {
         } else {
             NavigationView {
                 List {
-                    NavigationLink(destination: Profile(debug: $debug, isMainViewUpdated: $isMainViewUpdated, profileHeader: $profileHeader, userIDtoGet: "0", imageURL: $imageURL, viewerShown: $viewerShown)) {
+                    NavigationLink(destination: ProfileView()) {
                         Label("Профиль", systemImage: "person.crop.circle")
                     }
-                    
+                
                     NavigationLink(destination: Feed(imageURL: $imageURL, viewerShown: $viewerShown)) {
                         Label("Feed", systemImage: "newspaper")
                     }
@@ -89,7 +89,7 @@ struct MainScreen: View {
                     }
                 }
                 .navigationTitle("OpenVK Swift")
-                Profile(debug: $debug, isMainViewUpdated: $isMainViewUpdated, profileHeader: $profileHeader, userIDtoGet: "0", imageURL: $imageURL, viewerShown: $viewerShown)
+                ProfileView()
             }
             // Костыль, чтобы обновлять экран ¯\_(ツ)_/¯ 👇🏼 (не осуждайте пж)
             .background(isViewUpdated ? Color.clear : Color.clear)
