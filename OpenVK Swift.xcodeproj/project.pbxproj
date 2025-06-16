@@ -38,6 +38,9 @@
 		7A11D9952D4ABDE9003EB809 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9942D4ABDE6003EB809 /* AlertManager.swift */; };
 		7A11D99A2D4ABE2D003EB809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11D9992D4ABE2A003EB809 /* User.swift */; };
 		7A1AF4232D3DF00700DA438A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AF4222D3DF00700DA438A /* Music.swift */; };
+		7A3A1EC72DFFABA800016649 /* InstanceEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A1EC62DFFABA800016649 /* InstanceEditor.swift */; };
+		7A3A1ECA2DFFB1FD00016649 /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A1EC92DFFB1E600016649 /* TextFieldAlert.swift */; };
+		7A3A1ECC2DFFC16A00016649 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A3A1ECB2DFFC16A00016649 /* info.plist */; };
 		7AD347E42D595BBE0019AE68 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD347E32D595BB80019AE68 /* ProfileModel.swift */; };
 		7AD91DB52DF22D8600EA9C83 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD91DB42DF22D7400EA9C83 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +76,9 @@
 		7A11D9942D4ABDE6003EB809 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		7A11D9992D4ABE2A003EB809 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A1AF4222D3DF00700DA438A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		7A3A1EC62DFFABA800016649 /* InstanceEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceEditor.swift; sourceTree = "<group>"; };
+		7A3A1EC92DFFB1E600016649 /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
+		7A3A1ECB2DFFC16A00016649 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		7AA654C32D4143AE0074A73B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7AD347E32D595BB80019AE68 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		7AD91DB42DF22D7400EA9C83 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 		2A18C94F2AE6BFE6005A3F7C = {
 			isa = PBXGroup;
 			children = (
+				7A3A1ECB2DFFC16A00016649 /* info.plist */,
 				7AA654C32D4143AE0074A73B /* .gitignore */,
 				2A18C95A2AE6BFE6005A3F7C /* ovk */,
 				2A18C9592AE6BFE6005A3F7C /* Products */,
@@ -138,7 +145,6 @@
 		2A28D6872AE965A700531DC9 /* Subscreens */ = {
 			isa = PBXGroup;
 			children = (
-				2AA309B22AFE0C840074E038 /* Components */,
 				2A8983822AFA246D00408A8A /* SubSubScreens */,
 				2A28D6882AE965B400531DC9 /* Profile.swift */,
 				2A8139F62B19DB9100BB471C /* Feed.swift */,
@@ -196,6 +202,7 @@
 				2A95C5652AE8F6310042F64C /* MainScreen.swift */,
 				2A95C5672AE909E20042F64C /* LoginSettings.swift */,
 				2A28D6802AE9141300531DC9 /* About.swift */,
+				2AA309B22AFE0C840074E038 /* Components */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -203,7 +210,9 @@
 		2AA309B22AFE0C840074E038 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7A3A1EC82DFFB1D900016649 /* Utils */,
 				2AA309B32AFE0C910074E038 /* Post.swift */,
+				7A3A1EC62DFFABA800016649 /* InstanceEditor.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,6 +233,14 @@
 				7A11D9992D4ABE2A003EB809 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7A3A1EC82DFFB1D900016649 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7A3A1EC92DFFB1E600016649 /* TextFieldAlert.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7AD91DB32DF22D1600EA9C83 /* Presenters */ = {
@@ -266,7 +283,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					2A18C9572AE6BFE6005A3F7C = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -301,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3A1ECC2DFFC16A00016649 /* info.plist in Resources */,
 				2A18C9632AE6BFE6005A3F7C /* Preview Assets.xcassets in Resources */,
 				2A18C9602AE6BFE6005A3F7C /* Assets.xcassets in Resources */,
 				2A95C56A2AE9115B0042F64C /* Localizable.xcstrings in Resources */,
@@ -322,7 +340,9 @@
 				2A28D6892AE965B400531DC9 /* Profile.swift in Sources */,
 				2A28D68B2AE968A100531DC9 /* API.swift in Sources */,
 				2A6FE33C2AE7BA4700F1D694 /* JSONthings.swift in Sources */,
+				7A3A1EC72DFFABA800016649 /* InstanceEditor.swift in Sources */,
 				7A1AF4232D3DF00700DA438A /* Music.swift in Sources */,
+				7A3A1ECA2DFFB1FD00016649 /* TextFieldAlert.swift in Sources */,
 				2A95C5662AE8F6310042F64C /* MainScreen.swift in Sources */,
 				7A11D9932D4ABDC9003EB809 /* AuthenticationManager.swift in Sources */,
 				2A28D6852AE959D400531DC9 /* Localization.swift in Sources */,
@@ -384,6 +404,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q29QBUH82S;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -448,6 +469,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q29QBUH82S;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -476,9 +498,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 090625;
+				CURRENT_PROJECT_VERSION = 15.06.25;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
-				DEVELOPMENT_TEAM = Q29QBUH82S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = OpenVK;
@@ -493,7 +514,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.7;
+				MARKETING_VERSION = 0.2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -512,9 +533,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 090625;
+				CURRENT_PROJECT_VERSION = 15.06.25;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
-				DEVELOPMENT_TEAM = Q29QBUH82S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = OpenVK;
@@ -529,7 +549,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.7;
+				MARKETING_VERSION = 0.2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

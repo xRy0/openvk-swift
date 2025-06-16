@@ -78,6 +78,7 @@ class LoginPresenter: ObservableObject {
     }
     
     public func handleLogin(){
+        isLoading = true
         AuthenticationManager.shared.login(instance: instance, username: login, password: password, code: code, completion: completion)
     }
     
@@ -99,4 +100,27 @@ class LoginPresenter: ObservableObject {
             saveArrayToUserDefaults(forKey: "instances", value: addedInstances)
         }
     
+}
+
+extension LoginPresenter {
+    static var mock: LoginPresenter {
+        let presenter = LoginPresenter(instance: "https://ovk.to")
+        presenter.login = "demo_user"
+        presenter.password = "123456"
+        presenter.code = ""
+        presenter.addedInstances = ["https://mock.instance", "https://demo.site"]
+        presenter.newInstanceText = "https://new.instance"
+        presenter.showAddAlert = false
+        presenter.showDeleteAlert = false
+        presenter.showEditSheet = false
+        presenter.error = ""
+        presenter.alertText = ""
+        presenter.showAlert = false
+        presenter.isLoading = false
+        presenter.isWebViewOpened = false
+        presenter.webViewURL = URL(string: "https://ovk.to/reg")!
+        presenter.show2FA = false
+        presenter.debugToken = ""
+        return presenter
+    }
 }

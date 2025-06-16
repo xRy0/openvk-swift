@@ -63,45 +63,7 @@ struct LoginView: View {
                         Text("\(presenter.instance)")
                     }
                     .sheet(isPresented: $presenter.showEditSheet, content: {
-                        List {
-                            Section("Основные инстансы") {
-                                ForEach(presenter.mainInstances, id: \.self) { instance in
-                                    HStack {
-                                        Label(instance,
-                                              systemImage: "checkmark.seal.fill")
-                                        .foregroundColor(.green)
-                                        Spacer()
-                                    }
-                                }
-                            }
-                            
-                            Section("Добавленные инстансы") {
-                                ForEach(presenter.addedInstances, id: \.self) { instance in
-                                    HStack {
-                                        Label(instance,
-                                              systemImage: instance.contains("https") ? "lock.fill" : "globe")
-                                        Spacer()
-                                    }
-                                }
-                                .onDelete(perform: presenter.deleteInstances)
-                                Button {
-                                    presenter.showAddAlert = true
-                                } label: {
-                                    Label("Добавить", systemImage: "plus")
-                                }
-                            }
-                        }
-                        .listStyle(.insetGrouped)
-                        .navigationTitle("Инстансы")
-                        .alert("Добавить инстанс", isPresented: $presenter.showAddAlert, actions: {
-                            TextField("https://example.com", text: $presenter.newInstanceText)
-                                .autocapitalization(.none)
-                                .disableAutocorrection(true)
-                            Button("Добавить", action: presenter.addInstance)
-                            Button("Отмена", role: .cancel) { }
-                        }, message: {
-                            Text("Введите адрес инстанса")
-                        })
+                        InstanceEditor(presenter: presenter)
                     })
                 }
                 
@@ -134,7 +96,24 @@ struct LoginView: View {
                             }
                         }
                     }
-                    .alert("Требуется 2FA код", isPresented: $presenter.show2FA, actions: {
+                    .background(
+                                TextFieldWrapper(
+                                    isPresented: $presenter.show2FA,
+                                    alert: TextFieldAlert(
+                                        title: "Требуется 2FA код",
+                                        message: "Введите код двухфакторной аутентификации", placeholder: "Код",
+                                        accept: "Войти",
+                                        cancel: "Отмена",
+                                        action: { text in
+                                            if let text = text {
+                                                presenter.code = text
+                                                presenter.handleLogin()
+                                            }
+                                        }
+                                    )
+                                )
+                            )
+                    /*.alert("Требуется 2FA код", isPresented: $presenter.show2FA, actions: {
                         TextField("Код", text: $presenter.code)
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
@@ -142,7 +121,7 @@ struct LoginView: View {
                         Button("Отмена", role: .cancel) { }
                     }, message: {
                         Text("Введите код двухфакторной аутентификации")
-                    })
+                    })*/
                     Button("Зарегистрироваться в браузере") {
                         presenter.openUrl(path: "reg")
                     }
