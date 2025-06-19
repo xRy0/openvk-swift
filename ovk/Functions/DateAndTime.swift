@@ -56,6 +56,7 @@ func convertTimestampToStatus(_ timestamp: Int, sex: Int=0) -> String {
     let timeDifference = (currentTime - timestamp) / 60
     var a = getLocalizedString(key: "gender_male_a")
     if sex == 1 {a = getLocalizedString(key: "gender_female_a")}
+    if sex == 0 {a = getLocalizedString(key: "gender_neutral_a")}
     
     if timeDifference < 60 {
         return "\(getLocalizedString(key: "Was"))\(a)\(getLocalizedString(key: "online")) \(timeDifference) \(getLocalizedString(key: "minutes_ago"))"
@@ -86,4 +87,12 @@ func convertTimestampToStatus(_ timestamp: Int, sex: Int=0) -> String {
         let formattedDate_2 = dateFormatter_2.string(from: date)
         return "\(getLocalizedString(key: "Was"))\(a)\(getLocalizedString(key: "online")) \(formattedDate_1) \(getLocalizedString(key: "at")) \(formattedDate_2)"
     }
+}
+
+func convertTimestampToDate(timestamp: Int) -> String {
+    let dateFormatter_1 = DateFormatter()
+    dateFormatter_1.dateFormat = "d MMM YY"
+    let date = Date(timeIntervalSince1970: TimeInterval(timestamp))
+    let formattedDate_1 = dateFormatter_1.string(from: date)
+    return formattedDate_1
 }

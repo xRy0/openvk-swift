@@ -31,3 +31,15 @@ func DictToString(from dictionary: [String: Any]) -> String? {
     }
 }
 
+func toBool(from value: Any) -> Bool {
+    switch value {
+    case let b as Bool:
+        return b
+    case let i as Int:
+        return i != 0
+    case let s as String:
+        return ["true", "1"].contains(s.lowercased())
+    default:
+        return false
+    }
+}

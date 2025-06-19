@@ -27,6 +27,12 @@ struct ProfileView: View {
                     }
                 }
             }
+            if presenter.profile?.uid != nil {
+                WallComponent(ownerId: (presenter.profile?.uid!)!)
+            }
+        }
+        .refreshable {
+            presenter.getMe()
         }
     }
 }

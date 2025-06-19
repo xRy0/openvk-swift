@@ -185,6 +185,23 @@
         }
       }
     },
+    "gender_neutral_a" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "и"
+          }
+        }
+      }
+    },
     "GitHub" : {
       "localizations" : {
         "en" : {
@@ -200,6 +217,9 @@
           }
         }
       }
+    },
+    "Hello, World!" : {
+
     },
     "hour" : {
       "extractionState" : "manual",
@@ -961,6 +981,9 @@
         }
       }
     },
+    "Подробнее" : {
+
+    },
     "Показать информацию" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -1029,6 +1052,7 @@
       }
     },
     "Прикреплён опрос: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1039,6 +1063,7 @@
       }
     },
     "Прикреплено аудио: %@ - %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1049,6 +1074,7 @@
       }
     },
     "Прикреплено видео: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

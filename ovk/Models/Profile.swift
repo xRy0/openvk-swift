@@ -9,7 +9,7 @@ import Foundation
 
 struct Profile: Codable {
 
-  var id              : Int?      = nil
+  var uid             : Int?      = nil
   var firstName       : String?   = nil
   var lastName        : String?   = nil
   var isClosed        : Bool?     = nil
@@ -42,7 +42,7 @@ struct Profile: Codable {
 
   enum CodingKeys: String, CodingKey {
 
-    case id              = "id"
+    case uid             = "id"
     case firstName       = "first_name"
     case lastName        = "last_name"
     case isClosed        = "is_closed"
@@ -78,7 +78,7 @@ struct Profile: Codable {
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
 
-    id              = try values.decodeIfPresent(Int.self      , forKey: .id              )
+    uid             = try values.decodeIfPresent(Int.self      , forKey: .uid             )
     firstName       = try values.decodeIfPresent(String.self   , forKey: .firstName       )
     lastName        = try values.decodeIfPresent(String.self   , forKey: .lastName        )
     isClosed        = try values.decodeIfPresent(Bool.self     , forKey: .isClosed        )

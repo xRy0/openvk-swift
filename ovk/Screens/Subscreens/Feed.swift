@@ -30,17 +30,17 @@ struct Feed: View {
     
     var body: some View {
         Form {
-            ForEach(0..<posts.count, id:\.self) {index in
+            /*ForEach(0..<posts.count, id:\.self) {index in
                 Post(
                     post: posts[index] as! Dictionary<String, Any>,
                     profiles: postsProfiles as! [Dictionary<String, Any>],
                     groups: postsGroups as! [Dictionary<String, Any>],
-                    imageURL: $imageURL,
-                    viewerShown: $viewerShown
+                    //imageURL: $imageURL,
+                    //viewerShown: $viewerShown
                 )
                 .listRowBackground(Color.clear)
                 .listRowInsets(EdgeInsets())
-            }
+            }*/
         }
         .modifier(FormHiddenBackground())
         .onAppear(perform: loadData)

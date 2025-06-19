@@ -34,7 +34,7 @@ class OVKClient {
     init(session: URLSession = .shared) {
         self.session = session
         self.accessToken = getValueFromKeychain(forKey: "token")
-        self.baseURL = URL(string: "\(getValueFromKeychain(forKey: "instance") ?? "https://ovk.to")/method/")!
+        self.baseURL = URL(string: "\(getValueFromUserDefaults(forKey: "instance") ?? "https://ovk.to")/method/")!
     }
 
     func request<T: Decodable>(_ endpoint: Endpoint, completion: @escaping (Result<T, APIError>) -> Void) {
@@ -51,6 +51,8 @@ class OVKClient {
 
         var request = URLRequest(url: urlComponents.url!)
         request.httpMethod = endpoint.method.rawValue
+        
+        print(self.baseURL)
 
         let task = session.dataTask(with: request) { data, response, error in
             // Обработка сетевой ошибки
@@ -62,7 +64,7 @@ class OVKClient {
                 completion(.failure(APIError(error_code: -1, error_msg: "No data", request_params: nil)))
                 return
             }
-            //print(String(data: data, encoding: .utf8) ?? "Не удалось декодировать тело ответа в строку")
+            print(String(data: data, encoding: .utf8) ?? "Не удалось декодировать тело ответа в строку")
             let decoder = JSONDecoder()
             // Пробуем декодировать успешный ответ
             do {
@@ -76,6 +78,27 @@ class OVKClient {
                     completion(.success(result))
                 }
             } catch {
+                if let decodingError = error as? DecodingError {
+                        switch decodingError {
+                        case .typeMismatch(let type, let context):
+                            print("Type mismatch for type \(type): \(context.debugDescription)")
+                            print("CodingPath:", context.codingPath)
+                        case .valueNotFound(let type, let context):
+                            print("Value not found for type \(type): \(context.debugDescription)")
+                            print("CodingPath:", context.codingPath)
+                        case .keyNotFound(let key, let context):
+                            print("Key '\(key)' not found: \(context.debugDescription)")
+                            print("CodingPath:", context.codingPath)
+                        case .dataCorrupted(let context):
+                            print("Data corrupted: \(context.debugDescription)")
+                            print("CodingPath:", context.codingPath)
+                        @unknown default:
+                            print("Unknown decoding error: \(decodingError)")
+                        }
+                    } else {
+                        print("Other error: \(error.localizedDescription)")
+                    }
+                
                 // При ошибке парсинга пробуем декодировать структуру ошибки API
                 if let apiErr = try? decoder.decode(APIError.self, from: data) {
                     completion(.failure(apiErr))
@@ -102,28 +125,39 @@ enum HTTPMethod: String {
 // Перечисляем поддерживаемые эндпоинты API
 enum Endpoint {
     case accountGetProfileInfo
+    case accountSetOnline
     
     case newsfeedAddBan(userIds: [Int]?, groupIds: [Int]?)
     case usersGetMe(fields: [String]?)
+    
+    case wallGet(ownerId: Int?, extended: Int?, count: Int?)
     
     // Распознавание пути, HTTP-метода и параметров
     var path: String {
         switch self {
         case .accountGetProfileInfo:
             return "account.getProfileInfo"
+        case .accountSetOnline:
+            return "account.setOnline"
         case .newsfeedAddBan:
             return "newsfeed.addBan"
         case .usersGetMe:
             return "users.get"
+        case .wallGet:
+            return "wall.get"
         }
     }
     var method: HTTPMethod {
         switch self {
         case .accountGetProfileInfo:
             return .GET
+        case .accountSetOnline:
+            return .GET
         case .newsfeedAddBan:
             return .POST
         case .usersGetMe:
+            return .GET
+        case .wallGet:
             return .GET
         }
     }
@@ -131,6 +165,8 @@ enum Endpoint {
         switch self {
         case .accountGetProfileInfo:
             return [:]  // этот метод не требует дополнительных параметров
+        case .accountSetOnline:
+            return [:]
         case .newsfeedAddBan(let userIds, let groupIds):
             var params: [String: Any] = [:]
             if let users = userIds {
@@ -146,6 +182,8 @@ enum Endpoint {
                 params["fields"] = fields.map { String($0) }.joined(separator: ",")
             }
             return params
+        case .wallGet(let ownerId, let extended, let count):
+            return ["owner_id": ownerId ?? 0, "extended": extended ?? 1, "count": count ?? 5]
         }
     }
 }

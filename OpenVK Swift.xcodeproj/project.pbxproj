@@ -44,6 +44,22 @@
 		7A3A1EDC2DFFE7F900016649 /* Counters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A1EDB2DFFE7F900016649 /* Counters.swift */; };
 		7A3A1EDE2DFFF50300016649 /* OVKClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A1EDD2DFFF50300016649 /* OVKClient.swift */; };
 		7A3A1EE22DFFFB7E00016649 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A1EE12DFFFB7E00016649 /* ProfileView.swift */; };
+		7AA6FB232E0390060016FB9F /* CopyHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6FB222E0390060016FB9F /* CopyHistory.swift */; };
+		7AA6FB252E0391D80016FB9F /* SizesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6FB242E0391D40016FB9F /* SizesModel.swift */; };
+		7AA6FB272E0391F90016FB9F /* PostPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6FB262E0391F00016FB9F /* PostPhotoModel.swift */; };
+		7AA6FB292E03922A0016FB9F /* PostAttachmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6FB282E0392210016FB9F /* PostAttachmentsModel.swift */; };
+		7AA6FB2B2E03952D0016FB9F /* PostsProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6FB2A2E0395190016FB9F /* PostsProfiles.swift */; };
+		7AC6D3CE2E036165007BB7C6 /* ProfileInfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3CD2E036165007BB7C6 /* ProfileInfoSheet.swift */; };
+		7AC6D3D02E037664007BB7C6 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3CF2E037664007BB7C6 /* NewsFeed.swift */; };
+		7AC6D3D22E0378C1007BB7C6 /* PostSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3D12E0378B9007BB7C6 /* PostSource.swift */; };
+		7AC6D3D42E037900007BB7C6 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3D32E0378FB007BB7C6 /* Comments.swift */; };
+		7AC6D3D62E037930007BB7C6 /* Likes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3D52E03792E007BB7C6 /* Likes.swift */; };
+		7AC6D3D82E037948007BB7C6 /* Reposts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3D72E037945007BB7C6 /* Reposts.swift */; };
+		7AC6D3DA2E037965007BB7C6 /* WallPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3D92E037960007BB7C6 /* WallPosts.swift */; };
+		7AC6D3DC2E0379A4007BB7C6 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3DB2E0379A1007BB7C6 /* GroupModel.swift */; };
+		7AC6D3DE2E0379B9007BB7C6 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3DD2E0379B6007BB7C6 /* Wall.swift */; };
+		7AC6D3E02E037C34007BB7C6 /* WallPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3DF2E037C2E007BB7C6 /* WallPresenter.swift */; };
+		7AC6D3E22E037D7D007BB7C6 /* WallComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC6D3E12E037D7D007BB7C6 /* WallComponent.swift */; };
 		7AD91DB52DF22D8600EA9C83 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD91DB42DF22D7400EA9C83 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +101,22 @@
 		7A3A1EDD2DFFF50300016649 /* OVKClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVKClient.swift; sourceTree = "<group>"; };
 		7A3A1EE12DFFFB7E00016649 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		7AA654C32D4143AE0074A73B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7AA6FB222E0390060016FB9F /* CopyHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyHistory.swift; sourceTree = "<group>"; };
+		7AA6FB242E0391D40016FB9F /* SizesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesModel.swift; sourceTree = "<group>"; };
+		7AA6FB262E0391F00016FB9F /* PostPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPhotoModel.swift; sourceTree = "<group>"; };
+		7AA6FB282E0392210016FB9F /* PostAttachmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAttachmentsModel.swift; sourceTree = "<group>"; };
+		7AA6FB2A2E0395190016FB9F /* PostsProfiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsProfiles.swift; sourceTree = "<group>"; };
+		7AC6D3CD2E036165007BB7C6 /* ProfileInfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoSheet.swift; sourceTree = "<group>"; };
+		7AC6D3CF2E037664007BB7C6 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		7AC6D3D12E0378B9007BB7C6 /* PostSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSource.swift; sourceTree = "<group>"; };
+		7AC6D3D32E0378FB007BB7C6 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		7AC6D3D52E03792E007BB7C6 /* Likes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Likes.swift; sourceTree = "<group>"; };
+		7AC6D3D72E037945007BB7C6 /* Reposts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reposts.swift; sourceTree = "<group>"; };
+		7AC6D3D92E037960007BB7C6 /* WallPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPosts.swift; sourceTree = "<group>"; };
+		7AC6D3DB2E0379A1007BB7C6 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		7AC6D3DD2E0379B6007BB7C6 /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		7AC6D3DF2E037C2E007BB7C6 /* WallPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPresenter.swift; sourceTree = "<group>"; };
+		7AC6D3E12E037D7D007BB7C6 /* WallComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallComponent.swift; sourceTree = "<group>"; };
 		7AD91DB42DF22D7400EA9C83 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,7 +230,10 @@
 				7A3A1EC82DFFB1D900016649 /* Utils */,
 				2AA309B32AFE0C910074E038 /* Post.swift */,
 				7A3A1EC62DFFABA800016649 /* InstanceEditor.swift */,
+				7AC6D3E12E037D7D007BB7C6 /* WallComponent.swift */,
 				7A3A1ED12DFFDDE000016649 /* ProfileHeader.swift */,
+				7AC6D3CD2E036165007BB7C6 /* ProfileInfoSheet.swift */,
+				7AC6D3CF2E037664007BB7C6 /* NewsFeed.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -218,6 +253,18 @@
 				7A11D9992D4ABE2A003EB809 /* User.swift */,
 				7A3A1ED72DFFE5EA00016649 /* Profile.swift */,
 				7A3A1ED92DFFE7C200016649 /* LastSeen.swift */,
+				7AC6D3D12E0378B9007BB7C6 /* PostSource.swift */,
+				7AC6D3D32E0378FB007BB7C6 /* Comments.swift */,
+				7AC6D3D52E03792E007BB7C6 /* Likes.swift */,
+				7AA6FB2A2E0395190016FB9F /* PostsProfiles.swift */,
+				7AC6D3D72E037945007BB7C6 /* Reposts.swift */,
+				7AC6D3D92E037960007BB7C6 /* WallPosts.swift */,
+				7AA6FB242E0391D40016FB9F /* SizesModel.swift */,
+				7AA6FB262E0391F00016FB9F /* PostPhotoModel.swift */,
+				7AA6FB282E0392210016FB9F /* PostAttachmentsModel.swift */,
+				7AA6FB222E0390060016FB9F /* CopyHistory.swift */,
+				7AC6D3DB2E0379A1007BB7C6 /* GroupModel.swift */,
+				7AC6D3DD2E0379B6007BB7C6 /* Wall.swift */,
 				7A3A1EDB2DFFE7F900016649 /* Counters.swift */,
 			);
 			path = Models;
@@ -237,6 +284,7 @@
 			children = (
 				7AD91DB42DF22D7400EA9C83 /* LoginPresenter.swift */,
 				7A3A1ED52DFFE51800016649 /* ProfilePresenter.swift */,
+				7AC6D3DF2E037C2E007BB7C6 /* WallPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -322,34 +370,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A95C5682AE909E20042F64C /* LoginSettings.swift in Sources */,
+				7AC6D3E22E037D7D007BB7C6 /* WallComponent.swift in Sources */,
 				2A18C95E2AE6BFE6005A3F7C /* LoginView.swift in Sources */,
 				7A3A1ED82DFFE5EA00016649 /* Profile.swift in Sources */,
 				2A28D6812AE9141300531DC9 /* About.swift in Sources */,
 				7A11D99A2D4ABE2D003EB809 /* User.swift in Sources */,
 				2A28D68B2AE968A100531DC9 /* API.swift in Sources */,
+				7AC6D3DC2E0379A4007BB7C6 /* GroupModel.swift in Sources */,
+				7AA6FB292E03922A0016FB9F /* PostAttachmentsModel.swift in Sources */,
 				7A3A1ED22DFFDDE000016649 /* ProfileHeader.swift in Sources */,
 				2A6FE33C2AE7BA4700F1D694 /* JSONthings.swift in Sources */,
+				7AC6D3D62E037930007BB7C6 /* Likes.swift in Sources */,
 				7A3A1EC72DFFABA800016649 /* InstanceEditor.swift in Sources */,
 				7A1AF4232D3DF00700DA438A /* Music.swift in Sources */,
 				7A3A1ECA2DFFB1FD00016649 /* TextFieldAlert.swift in Sources */,
+				7AA6FB232E0390060016FB9F /* CopyHistory.swift in Sources */,
 				7A3A1ED62DFFE51800016649 /* ProfilePresenter.swift in Sources */,
+				7AA6FB252E0391D80016FB9F /* SizesModel.swift in Sources */,
 				2A95C5662AE8F6310042F64C /* MainScreen.swift in Sources */,
+				7AC6D3D02E037664007BB7C6 /* NewsFeed.swift in Sources */,
+				7AC6D3D82E037948007BB7C6 /* Reposts.swift in Sources */,
+				7AC6D3D22E0378C1007BB7C6 /* PostSource.swift in Sources */,
 				7A11D9932D4ABDC9003EB809 /* AuthenticationManager.swift in Sources */,
 				2A28D6852AE959D400531DC9 /* Localization.swift in Sources */,
 				2A95C5642AE8F24F0042F64C /* MainView.swift in Sources */,
 				2A8139F72B19DB9100BB471C /* Feed.swift in Sources */,
 				2A6FE33A2AE7B47D00F1D694 /* WebView.swift in Sources */,
+				7AA6FB2B2E03952D0016FB9F /* PostsProfiles.swift in Sources */,
 				2A6FE3372AE7A32100F1D694 /* LogIn.swift in Sources */,
 				7A3A1EE22DFFFB7E00016649 /* ProfileView.swift in Sources */,
 				7AD91DB52DF22D8600EA9C83 /* LoginPresenter.swift in Sources */,
 				7A3A1EDA2DFFE7C200016649 /* LastSeen.swift in Sources */,
+				7AC6D3D42E037900007BB7C6 /* Comments.swift in Sources */,
 				2A28D6832AE92A7800531DC9 /* UserDefaults.swift in Sources */,
 				2A78FA892B3B0EA200F1E106 /* Structs.swift in Sources */,
 				7A11D9952D4ABDE9003EB809 /* AlertManager.swift in Sources */,
+				7AC6D3CE2E036165007BB7C6 /* ProfileInfoSheet.swift in Sources */,
 				2AF9EB052AE9BC29009F0935 /* DateAndTime.swift in Sources */,
 				7A3A1EDE2DFFF50300016649 /* OVKClient.swift in Sources */,
 				2A18C95C2AE6BFE6005A3F7C /* ovkApp.swift in Sources */,
 				2AECF5C62AE7D30800A463A3 /* Keychain.swift in Sources */,
+				7AC6D3DA2E037965007BB7C6 /* WallPosts.swift in Sources */,
+				7AA6FB272E0391F90016FB9F /* PostPhotoModel.swift in Sources */,
+				7AC6D3E02E037C34007BB7C6 /* WallPresenter.swift in Sources */,
+				7AC6D3DE2E0379B9007BB7C6 /* Wall.swift in Sources */,
 				7A3A1EDC2DFFE7F900016649 /* Counters.swift in Sources */,
 				2A95C55F2AE8EAA90042F64C /* JSONErrors.swift in Sources */,
 				2AF9EB072AE9DA8D009F0935 /* Extensions.swift in Sources */,
@@ -490,7 +554,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15.06.25;
+				CURRENT_PROJECT_VERSION = 19.06.25;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -506,7 +570,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.8;
+				MARKETING_VERSION = 0.2.9;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -525,7 +589,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15.06.25;
+				CURRENT_PROJECT_VERSION = 19.06.25;
 				DEVELOPMENT_ASSET_PATHS = "\"ovk/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -541,7 +605,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.8;
+				MARKETING_VERSION = 0.2.9;
 				PRODUCT_BUNDLE_IDENTIFIER = to.ovk.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

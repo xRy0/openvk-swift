@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileHeader: View {
     @ObservedObject var presenter: ProfilePresenter
+    @State var additionalInfoSheetShow = false
     
     var body: some View {
         HStack (alignment: .top, spacing: 20) {
@@ -37,6 +38,12 @@ struct ProfileHeader: View {
             }
             .frame(alignment: .leading)
         }
+        Button ("Подробнее") {
+            additionalInfoSheetShow = true
+        }
+        .sheet(isPresented: $additionalInfoSheetShow, content: {
+            ProfileInfoSheet(presenter: presenter)
+        })
     }
 }
 
