@@ -443,6 +443,35 @@
         }
       }
     },
+    "gender_neutral_a" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "и"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "и"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "и"
+          }
+        }
+      }
+    },
     "GitHub" : {
       "localizations" : {
         "" : {
@@ -467,6 +496,28 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "GitHub"
+          }
+        }
+      }
+    },
+    "Hello, World!" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hello, World!"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hello, World!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hello, World!"
           }
         }
       }
@@ -2047,6 +2098,28 @@
         }
       }
     },
+    "Подробнее" : {
+      "localizations" : {
+        "" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Подробнее"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Подробнее"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Подробнее"
+          }
+        }
+      }
+    },
     "Показать информацию" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -2193,6 +2266,7 @@
       }
     },
     "Прикреплён опрос: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2221,6 +2295,7 @@
       }
     },
     "Прикреплено аудио: %@ - %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
@@ -2249,6 +2324,7 @@
       }
     },
     "Прикреплено видео: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "" : {
           "stringUnit" : {
